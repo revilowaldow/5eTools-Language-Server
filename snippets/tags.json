@@ -41,7 +41,7 @@
         ],
         "description": "Renders as \"Hit: \". Do not use any text in it as it will not show up."
     },
-    "Hit (full)": {
+    "Hit (filled)": {
         "prefix": "@hit",
         "body": [
             "{@hit $TM_SELECTED_TEXT}"
@@ -387,7 +387,7 @@
 	"Recharge tag": {
 		"prefix": "@recharge",
 		"body":[
-			"{@recharge ${1|1,2,3,4,5,6|}}"
+			"{@recharge ${1|6,5,4,3,2,1|}}"
 		],
         "description": "Outputs success/failure for ability recharge"
 	}

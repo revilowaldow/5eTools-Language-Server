@@ -18,7 +18,7 @@
             "\t],",
             "\t\"startingProficiencies\": {",
             "\t\t\"armor\": [",
-            "\t\t\t\"${7|light,medium,heavy,{@item shield|phb|shields}|}\"",
+            "\t\t\t\"${7|light,medium,heavy,{@item shield\\|phb\\|shields}|}\"",
             "\t\t],",
             "\t\t\"weapons\": [",
             "\t\t\t\"${8:simple and martial are rendered as x weapons, but you can write any string that you want.}\"",
