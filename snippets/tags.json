@@ -1,0 +1,394 @@
+{
+    "Bold Text": {
+        "prefix": "@bold",
+        "body": [
+            "{@b $TM_SELECTED_TEXT}"
+        ],
+        "description": "Bold Text"
+    },
+    "Italic Text": {
+        "prefix": "@italic",
+        "body": [
+            "{@i $TM_SELECTED_TEXT}"
+        ],
+        "description": "Italic Text"
+    },
+    "Strikethrough Text": {
+        "prefix": "@strike",
+        "body": [
+            "{@s $TM_SELECTED_TEXT}"
+        ],
+        "description": "Strikethrough Text"
+    },
+    "Underline Text": {
+        "prefix": "@underline",
+        "body": [
+            "{@u $TM_SELECTED_TEXT}"
+        ],
+        "description": "Underline Text"
+    },
+    "Unit": {
+        "prefix": "@unit",
+        "body": [
+            "{@unit $TM_SELECTED_TEXT|${1:unitSingle}|${2:unitPlural}}"
+        ],
+        "description": "Unit text, for recipe scaling"
+    },
+    "Hit (empty)": {
+        "prefix": "@h",
+        "body": [
+            "{@h }"
+        ],
+        "description": "Renders as \"Hit: \". Do not use any text in it as it will not show up."
+    },
+    "Hit (full)": {
+        "prefix": "@hit",
+        "body": [
+            "{@hit $TM_SELECTED_TEXT}"
+        ],
+        "description": "Renders as \"Hit: +n\". "
+    },
+    "Difficulty CLass": {
+        "prefix": "@dc",
+        "body": [
+            "{@dc $TM_SELECTED_TEXT}"
+        ],
+        "description": "Renders as \"DC text\""
+    },
+    "Chance roll": {
+        "prefix": "@chance",
+        "body": [
+            "{@chance $TM_SELECTED_TEXT|${1:% of success: 'a roll higher than 100 minus this value'}|${2:display text}|${3:rolled by name}|${4:on success text}|${5:on failure text}}"
+        ],
+        "description": "Shows the probability of success"
+    },
+    "Damage roll": {
+        "prefix": "@damage",
+        "body": [
+            "{@damage $TM_SELECTED_TEXT}"
+        ],
+        "description": "Rolls for damage, with an XdY format (can use arithmetic operators)"
+    },
+    "Dice roll": {
+        "prefix": "@dice",
+        "body": [
+            "{@dice $TM_SELECTED_TEXT|${1:display text}|${2:rolled by name}}"
+        ],
+        "description": "A general dice roll, with an XdY format (can use arithmetic operators)"
+    },
+    "Note text": {
+        "prefix": "@note",
+        "body": [
+            "{@note $TM_SELECTED_TEXT}"
+        ],
+        "description": "Note text, renders italicised with a faded grey look"
+    },
+    "Sense tag": {
+        "prefix": "@sense",
+        "body": [
+            "{@sense $TM_SELECTED_TEXT|${1:Source (MM for tremorsense)}}"
+        ],
+        "description": "Tags a sense type, to show an explanation on hover"
+    },
+    "Skill tag": {
+        "prefix": "@skill",
+        "body": [
+            "{@skill $TM_SELECTED_TEXT|${1:Source}}"
+        ],
+        "description": "Tags a skill type, to show an explanation on hover"
+    },
+    "Adventure tag": {
+        "prefix": "@adventure",
+        "body": [
+            "{@adventure $TM_SELECTED_TEXT|${1:source}|${2:chapter}|${3:heading}}"
+        ],
+        "description": "Tags an adventure, or a specific chapter/section of it"
+    },
+    "Book tag": {
+        "prefix": "@book",
+        "body": [
+            "{@adventure $TM_SELECTED_TEXT|${1:source}|${2:chapter}|${3:heading}}"
+        ],
+        "description": "Tags a book, or a specific chapter/section of it"
+    },
+    "Footnote text": {
+        "prefix": "@footnote",
+        "body": [
+            "{@footnote $TM_SELECTED_TEXT|${1:Footnote text}|${2:optional reference}}"
+        ],
+        "description": "Adds an inline footnote to the text, to be shown on hover"
+    },
+    "Link": {
+        "prefix": "@link",
+        "body": [
+            "{@link ${1:optional text}|$TM_SELECTED_TEXT}"
+        ],
+        "description": "Converts a url into an external hyperlink, with an optional display text"
+    },
+    "Color text": {
+        "prefix": "@color",
+        "body": [
+            "{@color $TM_SELECTED_TEXT|${1:hex code}}"
+        ],
+        "description": "Colors the text using the chosen hex code"
+    },
+    "Highlight text": {
+        "prefix": "@highlight",
+        "body": [
+            "{@highlight $TM_SELECTED_TEXT}"
+        ],
+        "description": "Highlights the text in yellow"
+    },
+    "Code text": {
+        "prefix": "@code",
+        "body": [
+            "{@code $TM_SELECTED_TEXT}"
+        ],
+        "description": "Formats the text as monospaced font"
+    },
+    "Area tag": {
+        "prefix": "@area",
+        "body": [
+            "{@area $TM_SELECTED_TEXT|${1:entry id}|${2:modifiers}}"
+        ],
+        "description": "Tags an area within a book/adventure. The modifiers are a combination of \"x\" for e[x]act text, removing the leading \"area\" prepended to the name, and \"u\" for [u]ppercase, capitalizing the prepended \"area\""
+    },
+    "Action tag": {
+        "prefix": "@action",
+        "body": [
+            "{@action $TM_SELECTED_TEXT|${1:source}|${2:optional text}}"
+        ],
+        "description": "Tags an action. Source is assumed to be PHB"
+    },
+    "Background tag": {
+        "prefix": "@background",
+        "body": [
+            "{@background $TM_SELECTED_TEXT|${1:source}|${2:optional text}}"
+        ],
+        "description": "Tags a background. Source is assumed to be PHB"
+    },
+    "Boon tag": {
+        "prefix": "@boon",
+        "body": [
+            "{@boon $TM_SELECTED_TEXT|${1:source}|${2:optional text}}"
+        ],
+        "description": "Tags a boon. Source is assumed to be MTF"
+    },
+    "Character creation option tag": {
+        "prefix": "@charoption",
+        "body": [
+            "{@charoption $TM_SELECTED_TEXT|${1:source}|${2:optional text}}"
+        ],
+        "description": "Tags a character creation option. Source is assumed to be MOT"
+    },
+    "Class tag": {
+        "prefix": "@class",
+        "body": [
+            "{@class $TM_SELECTED_TEXT|${1:source}|${2:optional text}|${3:optional subclass name}|${4:optional subclass source}}"
+        ],
+        "description": "Tags a character creation option. Source is assumed to be PHB"
+    },
+    "Condition tag": {
+        "prefix": "@condition",
+        "body": [
+            "{@condition $TM_SELECTED_TEXT|${1:source}|${2:optional text}}"
+        ],
+        "description": "Tags a condition. Source is assumed to be PHB"
+    },
+    "Creature tag": {
+        "prefix": "@creature",
+        "body": [
+            "{@creature $TM_SELECTED_TEXT|${1:source}|${2:optional text}}"
+        ],
+        "description": "Tags a creature. Source is assumed to be MM"
+    },
+    "Cult tag": {
+        "prefix": "@cult",
+        "body": [
+            "{@cult $TM_SELECTED_TEXT|${1:source}|${2:optional text}}"
+        ],
+        "description": "Tags a cult. Source is assumed to be MTF"
+    },
+    "Disease tag": {
+        "prefix": "@disease",
+        "body": [
+            "{@disease $TM_SELECTED_TEXT|${1:source}|${2:optional text}}"
+        ],
+        "description": "Tags a disease. Source is assumed to be DMG"
+    },
+    "Feat tag": {
+        "prefix": "@feat",
+        "body": [
+            "{@feat $TM_SELECTED_TEXT|${1:source}|${2:optional text}}"
+        ],
+        "description": "Tags a feat. Source is assumed to be PHB"
+    },
+    "Hazard tag": {
+        "prefix": "@hazard",
+        "body": [
+            "{@hazard $TM_SELECTED_TEXT|${1:source}|${2:optional text}}"
+        ],
+        "description": "Tags a hazard. Source is assumed to be DMG"
+    },
+    "Item tag": {
+        "prefix": "@item",
+        "body": [
+            "{@item $TM_SELECTED_TEXT|${1:source}|${2:optional text}}"
+        ],
+        "description": "Tags an item. Source is assumed to be DMG"
+    },
+    "Language tag": {
+        "prefix": "@language",
+        "body": [
+            "{@language $TM_SELECTED_TEXT|${1:source}|${2:optional text}}"
+        ],
+        "description": "Tags a language. Source is assumed to be PHB"
+    },
+    "Object tag": {
+        "prefix": "@object",
+        "body": [
+            "{@object $TM_SELECTED_TEXT|${1:source}|${2:optional text}}"
+        ],
+        "description": "Tags an object. Source is assumed to be DMG"
+    },
+    "Optional feature tag": {
+        "prefix": "@optfeature",
+        "body": [
+            "{@optfeature $TM_SELECTED_TEXT|${1:source}|${2:optional text}}"
+        ],
+        "description": "Tags an invocation or other optional feature. Source is assumed to be PHB"
+    },
+    "Psionics tag": {
+        "prefix": "@psionic",
+        "body": [
+            "{@psionic $TM_SELECTED_TEXT|${1:source}|${2:optional text}}"
+        ],
+        "description": "Tags psionics. Source is assumed to be UATheMysticClass"
+    },
+    "Race tag": {
+        "prefix": "@race",
+        "body": [
+            "{@race $TM_SELECTED_TEXT|${1:source}|${2:optional text}}"
+        ],
+        "description": "Tags a race. Source is assumed to be PHB"
+    },
+    "Recipe tag": {
+        "prefix": "@recipe",
+        "body": [
+            "{@recipe $TM_SELECTED_TEXT|${1:source}|${2:optional text}}"
+        ],
+        "description": "Tags a recipe. Source is assumed to be HF (Heroes' Feast)"
+    },
+    "Reward tag": {
+        "prefix": "@reward",
+        "body": [
+            "{@reward $TM_SELECTED_TEXT|${1:source}|${2:optional text}}"
+        ],
+        "description": "Tags a reward. Source is assumed to be DMG"
+    },
+    "Vehicle tag": {
+        "prefix": "@vehicle",
+        "body": [
+            "{@vehicle $TM_SELECTED_TEXT|${1:source}|${2:optional text}}"
+        ],
+        "description": "Tags a vehicle. Source is assumed to be GoS"
+    },
+    "Vehicle upgrade tag": {
+        "prefix": "@vehupgrade",
+        "body": [
+            "{@vehupgrade $TM_SELECTED_TEXT|${1:source}|${2:optional text}}"
+        ],
+        "description": "Tags a vehicle upgrade. Source is assumed to be GoS"
+    },
+    "Spell tag": {
+        "prefix": "@spell",
+        "body": [
+            "{@spell $TM_SELECTED_TEXT|${1:source}|${2:optional text}}"
+        ],
+        "description": "Tags a spell. Source is assumed to be PHB"
+    },
+    "Table tag": {
+        "prefix": "@table",
+        "body": [
+            "{@table $TM_SELECTED_TEXT|${1:source}|${2:optional text}}"
+        ],
+        "description": "Tags a table. Source is assumed to be DMG"
+    },
+    "Trap tag": {
+        "prefix": "@trap",
+        "body": [
+            "{@trap $TM_SELECTED_TEXT|${1:source}|${2:optional text}}"
+        ],
+        "description": "Tags a trap. Source is assumed to be DMG"
+    },
+    "Variant rule tag": {
+        "prefix": "@variantrule",
+        "body": [
+            "{@variantrule $TM_SELECTED_TEXT|${1:source}|${2:optional text}}"
+        ],
+        "description": "Tags a variant rule. Source is assumed to be DMG"
+    },
+    "Deity tag": {
+        "prefix": "@deity",
+        "body": [
+            "{@deity $TM_SELECTED_TEXT|${1:pantheon: Faerûnian}|${2:source}|${3:optional text}}"
+        ],
+        "description": "Tags a variant rule. Source is assumed to be PHB, Faerûnian pantheon"
+    },
+    "Class feature tag": {
+        "prefix": "@classFeature",
+        "body": [
+            "{@classFeature $TM_SELECTED_TEXT|${1:class}|${2:class source}|${3:level}|${4:feature source}|${5:optional text}}"
+        ],
+        "description": "Tags a class feature. Class source is assumed to be PHB, feature source is assumed to be the same as class source"
+    },
+    "Subclass feature tag": {
+        "prefix": "@subclassFeature",
+        "body": [
+            "{@subclassFeature $TM_SELECTED_TEXT|${1:class}|${2:class source}|${3:subclass}|${4:subclass source}|${5:level}|${6:feature source}|${7:optional text}}"
+        ],
+        "description": "Tags a subclass feature. Class and subclass source are assumed to be PHB, feature source is assumed to be the same as subclass source"
+    },
+    "Homebrew tag": {
+        "prefix": "@homebrew",
+        "body": [
+            "{@homebrew ${1:replacement text}|$TM_SELECTED_TEXT}"
+        ],
+        "description": "The homebrew tag can show changes and modifications on hover"
+    },
+    "5eTools tag": {
+        "prefix": "@5etools",
+        "body": [
+            "{@5etools $TM_SELECTED_TEXT|${1:page link}}"
+        ],
+        "description": "Links within the same base site url, use for links to the site"
+    },
+    "Loader tag": {
+        "prefix": "@loader",
+        "body": [
+            "{@loader $TM_SELECTED_TEXT|${1:json link}}"
+        ],
+        "description": "Loads homebrew files. e.g. \"creature/Kobold Press; Tome of Beasts.json\". The URL after the pipe is assumed to be from the root of the homebrew repository, unless it starts with a \"...://\" prefix (i.e., any link should work, but there's a shorthand for homebrew repository links)."
+    },
+    "Attack tag": {
+        "prefix": "@atk",
+        "body": [
+            "{@atk ${1|m,r,mw,rw,ms,rs,a,aw|}}"
+        ],
+        "description": "Bestiary 'attack' tags: Melee Attack:, Ranged Attack:, Melee or Ranged Attack:, Melee Weapon Attack:, Ranged Weapon Attack:, Melee Spell Attack:, Ranged Spell Attack:; (homebrew only) Area Attack:, Area Weapon Attack. These can be combined with commas."
+    },
+    "Quick Reference tag": {
+        "prefix": "@quickref",
+        "body": [
+            "{@quickref $TM_SELECTED_TEXT|${1:source}|${2:chapterIndex}|${3:headerIndex}|${4:displayText}}"
+        ],
+        "description": "Tags a quick reference entry"
+    },
+	"Recharge tag": {
+		"prefix": "@recharge",
+		"body":[
+			"{@recharge ${1|1,2,3,4,5,6|}}"
+		],
+        "description": "Outputs success/failure for ability recharge"
+	}
+}
