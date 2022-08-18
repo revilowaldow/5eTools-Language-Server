@@ -2,6 +2,10 @@
 
 This project tries to adhere to [Semantic Versioning](https://semver.org/)
 
+## [0.0.3]
+
+- Add missing sources
+
 ## [0.0.2]
 
 - Typos escaping $
