@@ -2,6 +2,9 @@
 
 This project tries to adhere to [Semantic Versioning](https://semver.org/)
 
+## [0.0.4]
+
+- Flip `name` and `source` in `statblock` snippet
 ## [0.0.3]
 
 - Add missing sources
