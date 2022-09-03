@@ -58,7 +58,7 @@
     "Chance roll": {
         "prefix": "@chance",
         "body": [
-            "{@chance $TM_SELECTED_TEXT|${1:% of success: 'a roll higher than 100 minus this value'}|${2:display text}|${3:rolled by name}|${4:on success text}|${5:on failure text}}"
+            "{@chance ${1:% of success: 'a roll higher than 100 minus this value'}|${2:display text}|${3:rolled by name}|${4:on success text}|${5:on failure text}}"
         ],
         "description": "Shows the probability of success"
     },
