@@ -2,6 +2,10 @@
 
 This project tries to adhere to [Semantic Versioning](https://semver.org/)
 
+## [0.0.6]
+
+- Correct `{@chance }` tag 2: Selected Text boogaloo
+
 ## [0.0.5]
 
 - Correct `{@chance }` tag
