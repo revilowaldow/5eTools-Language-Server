@@ -33,7 +33,7 @@
             "{",
             "\t\"type\": \"entries\",",
             "\t\"entries\": [",
-            "\t\t\"$TM_SELECTED_TEXT\"",
+            "\t\t$TM_SELECTED_TEXT",
             "\t]",
             "}"
         ],

@@ -2,6 +2,11 @@
 
 This project tries to adhere to [Semantic Versioning](https://semver.org/)
 
+## [0.0.8]
+
+- Update list of valid tags in highlighting
+- Remove surrounding quotes from headless entries
+
 ## [0.0.7]
 
 - Allow entry snippets to capture selected text
