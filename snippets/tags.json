@@ -62,6 +62,13 @@
         ],
         "description": "Shows the probability of success"
     },
+    "Coin Flip": {
+        "prefix": "@coinflip",
+        "body": [
+            "{@coinflip $TM_SELECTED_TEXT|${2:rolled by name}|${3:Heads (Success)}|${4:Tails (Failure)}}"
+        ],
+        "description": "Make a coin flip with custom face names/outcomes"
+    },
     "Damage roll": {
         "prefix": "@damage",
         "body": [

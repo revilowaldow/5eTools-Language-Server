@@ -2,6 +2,13 @@
 
 This project tries to adhere to [Semantic Versioning](https://semver.org/)
 
+## [0.0.9]
+
+- Update tag list to include coinflip
+- Add coinflip snippet
+- Add DoSI source
+- gitignore vscode user settings
+
 ## [0.0.8]
 
 - Update list of valid tags in highlighting
