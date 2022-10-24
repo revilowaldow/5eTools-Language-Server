@@ -66,8 +66,7 @@
 				{	
 					"comment": "`[...Renderer._stripTagLayer.toString().matchAll(/case \"@(\\w+?)\"/g)].map(item => item[1]).sort().join(\"|\")` OR `Renderer.TAGS.sort().join(\"|\")` if you trust Giddy to have updated it.",
 					"name": "keyword.language.5e",
-					"match": "@(5etools|ability|action|adventure|area|atk|autodice|b|background|bold|book|boon|chance|charoption|class|classFeature|code|coinflip|color|comic|comicH1|comicH2|comicH3|comicH4|comicNote|condition|creature|cult|d20|damage|dc|deity|dice|disease|feat|filter|footnote|h|hazard|help|highlight|hit|hitYourSpellAttack|homebrew|i|italic|item|language|link|loader|m|note|object|optfeature|psionic|quickref|race|recharge|recipe|reward|s|savingThrow|scaledamage|scaledice|sense|skill|skillCheck|spell|status|strike|style|subclassFeature|table|trap|u|underline|unit|variantrule|vehicle|vehupgrade
-					)\\b",
+					"match": "@(5etools|ability|action|adventure|area|atk|autodice|b|background|bold|book|boon|chance|charoption|class|classFeature|code|coinflip|color|comic|comicH1|comicH2|comicH3|comicH4|comicNote|condition|creature|cult|d20|damage|dc|deity|dice|disease|feat|filter|footnote|h|hazard|help|highlight|hit|hitYourSpellAttack|homebrew|i|italic|item|language|link|loader|m|note|object|optfeature|psionic|quickref|race|recharge|recipe|reward|s|savingThrow|scaledamage|scaledice|sense|skill|skillCheck|spell|status|strike|style|subclassFeature|table|trap|u|underline|unit|variantrule|vehicle|vehupgrade)\\b",
 					"captures": {
 						"1": {
 							"name": "keyword.language.symbol.5e"

@@ -2,6 +2,10 @@
 
 This project tries to adhere to [Semantic Versioning](https://semver.org/)
 
+## [0.0.10]
+
+- Typo
+
 ## [0.0.9]
 
 - Update tag list to include coinflip
