@@ -210,9 +210,24 @@
             "\t\"tag\": \"${1|spell,item,creature,condition,disease,status,background,race,optfeature,reward,feat,psionic,object,cult,boon,trap,hazard,deity,variantrule,charoption,vehicle,vehupgrade,class,action,language,classFeature,subclassFeature,table,recipe,skill,sense|}\",",            
             "\t\"source\": \"$2\",",
             "\t\"name\": \"$3\",",
-            "\t\"page\": ${4:0}",
+            "\t\"page\": ${4:0}${5:,\n\t\"collapsed\": true}",
             "}"
         ],
         "description": "Use in text entries to embed the referenced data. (Sub)class features need extra properties"
+    },
+    "statblockProp": {
+        "prefix": "statblockProp",
+        "body": [
+            "{",
+            "\t\"type\": \"statblock\",",
+            "\t\"prop\": \"${1|subclass|}\",",            
+            "\t\"source\": \"$2\",",
+            "\t\"name\": \"${3:Subclass ShortName}\",",
+            "\t\"className\": \"$4\",",
+            "\t\"classSource\": \"$5\",",
+            "\t\"page\": ${6:0}${7:,\n\t\"collapsed\": true}",
+            "}"
+        ],
+        "description": "Use in text entries to embed the referenced subclass"
     }
 }
