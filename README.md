@@ -16,3 +16,9 @@ A massive ripoff of [GoR](https://github.com/Git-GoR/5e-homebrew-snippets) and [
   - User specified Homebrew Sources for Highlighting
   - User specified matching for schema
 - Look into adding direct dependencies on 5e modules, for e.g. automatic source list updating
+
+## Example Features
+
+Content autofill and error checking from the schema:
+
+<video src='https://raw.githubusercontent.com/revilowaldow/5eTools-Language-Server/main/images/Autofill.mp4' width=180/>
