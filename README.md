@@ -19,6 +19,6 @@ A massive ripoff of [GoR](https://github.com/Git-GoR/5e-homebrew-snippets) and [
 
 ## Example Features
 
-Content autofill and error checking from the schema:
+Content autofill/suggestions and error checking from the schema, as well as syntax highlighting for 5eTools style tags.
 
-<video src='https://raw.githubusercontent.com/revilowaldow/5eTools-Language-Server/main/images/Autofill.mp4' width=180/>
+https://user-images.githubusercontent.com/52298102/204143606-e8853cc3-608b-468c-946e-e8fb1f687f25.mp4
