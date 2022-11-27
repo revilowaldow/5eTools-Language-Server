@@ -2,6 +2,10 @@
 
 This project tries to adhere to [Semantic Versioning](https://semver.org/)
 
+## [0.0.13]
+
+- Add video preview of features
+
 ## [0.0.12]
 
 - Add dedicated `statblock` snipped for subclasses and add optional `collapsed` bool to statblock snippet
