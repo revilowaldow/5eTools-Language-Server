@@ -2,6 +2,10 @@
 
 This project tries to adhere to [Semantic Versioning](https://semver.org/)
 
+## [0.0.14]
+
+- Add `"status"` key with dropdown to `_meta` snippet
+
 ## [0.0.13]
 
 - Add video preview of features
