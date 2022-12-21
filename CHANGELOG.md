@@ -2,6 +2,10 @@
 
 This project tries to adhere to [Semantic Versioning](https://semver.org/)
 
+## [0.1.0]
+
+- Redirect schema validation to new 5etools-utils dependency
+
 ## [0.0.14]
 
 - Add `"status"` key with dropdown to `_meta` snippet

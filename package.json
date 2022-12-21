@@ -38,7 +38,7 @@
 					"!package-lock.json",
 					"*.5e"
 				],
-				"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_schema-fast/homebrew.json"
+				"url": "https://raw.githubusercontent.com/TheGiddyLimit/5etools-utils/master/schema/brew-fast/homebrew.json"
 			}
 		],
 		"languages": [
