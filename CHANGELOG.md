@@ -2,6 +2,11 @@
 
 This project tries to adhere to [Semantic Versioning](https://semver.org/)
 
+## [0.1.1]
+
+- Update list of sources
+- Update command to generate keyword list
+
 ## [0.1.0]
 
 - Redirect schema validation to new 5etools-utils dependency
