@@ -2,7 +2,7 @@
 	"name": "5etools-language-server",
 	"displayName": "5eTools Language Server",
 	"description": "Adds syntax highlighting, snippets, and schemas for 5eTools data files",
-	"version": "0.1.1",
+	"version": "0.1.2",
 	"publisher": "revilowaldow",
 	"icon": "images/5eUA.png",
 	"repository": {
