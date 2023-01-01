@@ -2,6 +2,10 @@
 
 This project tries to adhere to [Semantic Versioning](https://semver.org/)
 
+## [0.1.2]
+
+- Updated schema snippet to point at new 5etools-utils module
+
 ## [0.1.1]
 
 - Update list of sources

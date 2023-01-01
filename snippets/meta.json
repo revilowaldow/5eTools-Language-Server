@@ -37,7 +37,7 @@
 	"$schema": {
 		"prefix": "$schema",
 		"body": [
-			"\"\\$schema\": \"https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_schema${1:-fast}/homebrew.json\""
+			"\"\\$schema\": \"https://raw.githubusercontent.com/TheGiddyLimit/5etools-utils/master/schema/brew${1:-fast}/homebrew.json\""
 		],
 		"description": "The JSON Schema for 5eTools Homebrew"
 	}
