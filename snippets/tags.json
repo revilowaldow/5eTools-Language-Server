@@ -397,5 +397,19 @@
 			"{@recharge ${1|6,5,4,3,2,1|}}"
 		],
         "description": "Outputs success/failure for ability recharge"
-	}
+	},
+    "Deck tag": {
+        "prefix": "@deck",
+        "body": [
+            "{@deck $TM_SELECTED_TEXT|${1:source}|${2:optional text}}"
+        ],
+        "description": "Tags a deck of cards. Source is assumed to be DMG"
+    },
+    "Card tag": {
+        "prefix": "@card",
+        "body": [
+            "{@card $TM_SELECTED_TEXT|${1:deck}|${2:source}|${3:optional text}}"
+        ],
+        "description": "Tags a card from a deck. Source is assumed to be DMG"
+    }
 }
