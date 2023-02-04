@@ -2,6 +2,11 @@
 
 This project tries to adhere to [Semantic Versioning](https://semver.org/)
 
+## [0.1.3]
+
+- Added snippets for card and deck tags
+- updated sources and keywords for highlighting
+
 ## [0.1.2]
 
 - Updated schema snippet to point at new 5etools-utils module
