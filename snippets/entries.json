@@ -188,6 +188,18 @@
         ],
         "description": "Centered text with the format 'Name  = text + mod'"
     },
+    "gallery": {
+        "prefix": "gallery",
+        "body": [
+            "{",
+            "\t\"type\": \"gallery\",",
+            "\t\"images\": [",
+            "\t\t$1",
+            "\t]",
+            "}"
+        ],
+        "description": "A gallery entry that can contain multiple images."
+    },
     "image": {
         "prefix": "image",
         "body": [
