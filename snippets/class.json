@@ -90,7 +90,7 @@
     "classFeatureRef": {
         "prefix": "classFeatureRef",
         "body": [
-            "\"${1:<name>}|${2:<className>}|${3:<classSource>}|${4:<level>}|${5:<source>}\""
+            "\"${1:<name>}|${2:<className>}|${3:<classSource>}|${4:<featureLevel>}|${5:<featureSource>}\""
         ],
         "description": "Reference a class feature inside a class"
     },
@@ -139,7 +139,7 @@
     "subclassFeatureRef": {
         "prefix": "subclassFeatureRef",
         "body": [
-            "\"${1:<name>}|${2:<className>}|${3:<classSource>}|${4:<subclassShortName>}|${5:<subclassSource>}|${6:<level>}|${7:<source>}\""
+            "\"${1:<name>}|${2:<className>}|${3:<classSource>}|${4:<subclassShortName>}|${5:<subclassSource>}|${6:<featureLevel>}|${7:<featureSource>}\""
         ],
         "description": "Reference a subclass feature inside a subclass"
     },
@@ -148,7 +148,7 @@
         "body": [
             "{",
             "\t\"type\": \"refSubclassFeature\",",
-            "\t\"subclassFeature\": \"${1:<name>}|${2:<className>}|${3:<classSource>}|${4:<subclassShortName>}|${5:<subclassSource>}|${6:<level>}|${7:<source>}\"",
+            "\t\"subclassFeature\": \"${1:<name>}|${2:<className>}|${3:<classSource>}|${4:<subclassShortName>}|${5:<subclassSource>}|${6:<featureLevel>}|${7:<featureSource>}\"",
             "}"
         ],
         "description": "Reference a subclass feature in the entries of another feature"
