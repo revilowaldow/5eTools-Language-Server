@@ -2,6 +2,9 @@
 
 This project tries to adhere to [Semantic Versioning](https://semver.org/)
 
+## [0.1.5]
+- Update source list for syntax highlighting
+
 ## [0.1.4]
 - Add snippet for gallery entry
 - Further clarify sources in (sub)class(Feature) references
