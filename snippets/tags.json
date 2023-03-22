@@ -411,5 +411,12 @@
             "{@card $TM_SELECTED_TEXT|${1:deck}|${2:source}|${3:optional text}}"
         ],
         "description": "Tags a card from a deck. Source is assumed to be DMG"
+    },
+    "Legendary Group tag": {
+        "prefix": "@legroup",
+        "body": [
+            "{@legroup $TM_SELECTED_TEXT|${1:source}|${2:optional text}}"
+        ],
+        "description": "Tags a legendary group. Source is assumed to be MM"
     }
 }
