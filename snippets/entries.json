@@ -219,7 +219,7 @@
         "body": [
             "{",
             "\t\"type\": \"statblock\",",
-            "\t\"tag\": \"${1|spell,item,creature,condition,disease,status,background,race,optfeature,reward,feat,psionic,object,cult,boon,trap,hazard,deity,variantrule,charoption,vehicle,vehupgrade,class,action,language,classFeature,subclassFeature,table,recipe,skill,sense|}\",",            
+            "\t\"tag\": \"${1|spell,item,creature,condition,disease,status,background,race,optfeature,reward,feat,psionic,object,cult,boon,trap,hazard,deity,variantrule,charoption,vehicle,vehupgrade,class,action,language,classFeature,subclassFeature,table,recipe,skill,sense,deck,legroup|}\",",            
             "\t\"source\": \"$2\",",
             "\t\"name\": \"$3\",",
             "\t\"page\": ${4:0}${5:,\n\t\"collapsed\": true}",
