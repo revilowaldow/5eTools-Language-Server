@@ -2,6 +2,11 @@
 
 This project tries to adhere to [Semantic Versioning](https://semver.org/)
 
+## [0.1.6]
+- Update list of sources and tags
+- Add legendary group tag
+- Add `legroup` and `deck` to autofill for statblock entry
+
 ## [0.1.5]
 - Update source list for syntax highlighting
 
