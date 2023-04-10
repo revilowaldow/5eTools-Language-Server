@@ -86,7 +86,7 @@
         "body": [
             "{",
             "\t\"type\": \"list\",",
-            "\t\"style\": \"${1|list-hang,list-hang-notitle,list-no-bullets,list-decimal,list-lower-roman|}\",",
+            "\t\"style\": \"${1|list-hang,list-hang-notitle,list-no-bullets,list-decimal,list-lower-roman,list-upper-roman|}\",",
             "\t\"columns\": ${2:0},",
 			"\t\"page\": ${3:0},",
             "\t\"name\": \"$4\",",
