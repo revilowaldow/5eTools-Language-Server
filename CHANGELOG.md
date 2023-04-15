@@ -2,6 +2,11 @@
 
 This project tries to adhere to [Semantic Versioning](https://semver.org/)
 
+## [0.1.7]
+- Update source list
+- Update list of list styles
+- Add status tag snippet
+
 ## [0.1.6]
 - Update list of sources and tags
 - Add legendary group tag
