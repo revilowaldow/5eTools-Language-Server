@@ -202,6 +202,13 @@
         ],
         "description": "Tags a condition. Source is assumed to be PHB"
     },
+    "Status tag": {
+        "prefix": "@status",
+        "body": [
+            "{@status $TM_SELECTED_TEXT|${1:source}|${2:optional text}}"
+        ],
+        "description": "Tags a status. Source is assumed to be PHB, the only official status is Concentration."
+    },
     "Creature tag": {
         "prefix": "@creature",
         "body": [
