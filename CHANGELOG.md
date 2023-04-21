@@ -2,6 +2,9 @@
 
 This project tries to adhere to [Semantic Versioning](https://semver.org/)
 
+## [0.1.8]
+- Update source list
+
 ## [0.1.7]
 - Update source list
 - Update list of list styles
