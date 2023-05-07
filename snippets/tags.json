@@ -425,5 +425,26 @@
             "{@legroup $TM_SELECTED_TEXT|${1:source}|${2:optional text}}"
         ],
         "description": "Tags a legendary group. Source is assumed to be MM"
+    },
+    "Superscript Text": {
+        "prefix": "@sup",
+        "body": [
+            "{@sup $TM_SELECTED_TEXT}"
+        ],
+        "description": "Superscript Text"
+    },
+    "Subscript Text": {
+        "prefix": "@sub",
+        "body": [
+            "{@sub $TM_SELECTED_TEXT}"
+        ],
+        "description": "Subscript Text"
+    },
+    "Keyboard Format": {
+        "prefix": "@kbd",
+        "body": [
+            "{@kbd $TM_SELECTED_TEXT}"
+        ],
+        "description": "Keyboard Format Text"
     }
 }

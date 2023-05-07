@@ -47,7 +47,7 @@
             "\t\"entries\": [",
             "\t\t\"$TM_SELECTED_TEXT$1\"",
             "\t],",
-            "\t\"by\": \"$2\",",
+            "\t\"by\": \"${2:This can also be an array}\",",
             "\t\"from\": \"$3\"",
             "}"
         ],
@@ -210,6 +210,7 @@
             "\t\t\"url\": \"$1\"",
             "\t},",
             "\t\"title\": \"${2:Optional Title}\"",
+            "\t\"credit\": \"${3:Optional Artist Credit}\"",
             "}"
         ],
         "description": "External image link"
