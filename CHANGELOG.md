@@ -2,6 +2,13 @@
 
 This project tries to adhere to [Semantic Versioning](https://semver.org/)
 
+## [0.1.9]
+- Update Source List
+- Update tag list
+- Add snippets for subscript, superscript and keyboard formatting
+- Add artist credit line to image entry snippet
+- Tweaked descriptions in quote entry tag
+
 ## [0.1.8]
 - Update source list
 
