@@ -446,5 +446,12 @@
             "{@kbd $TM_SELECTED_TEXT}"
         ],
         "description": "Keyboard Format Text"
+    },
+    "Font Text": {
+        "prefix": "@font",
+        "body": [
+            "{@font $TM_SELECTED_TEXT|${1:font name}}"
+        ],
+        "description": "Text in a specified standard or custom font"
     }
 }
