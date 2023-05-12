@@ -2,6 +2,9 @@
 
 This project tries to adhere to [Semantic Versioning](https://semver.org/)
 
+## [0.1.10]
+- Add support for `font` tag
+
 ## [0.1.9]
 - Update Source List
 - Update tag list
