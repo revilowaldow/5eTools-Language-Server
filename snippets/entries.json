@@ -209,7 +209,7 @@
             "\t\t\"type\": \"external\",",
             "\t\t\"url\": \"$1\"",
             "\t},",
-            "\t\"title\": \"${2:Optional Title}\"",
+            "\t\"title\": \"${2:Optional Title}\",",
             "\t\"credit\": \"${3:Optional Artist Credit}\"",
             "}"
         ],
