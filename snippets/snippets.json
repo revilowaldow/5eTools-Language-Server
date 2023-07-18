@@ -317,5 +317,21 @@
             "}"
         ],
         "description": "Variant Rule block"
+    },
+    "fluff": {
+        "prefix": "fluff",
+        "body": [
+            "{",
+            "\t\"name\": \"$1\",",
+            "\t\"source\": \"$2\",",
+            "\t\"entries\": [",
+            "\t\t$0",
+            "\t],",
+            "\t\"images\": [",
+            "\t\t$3",
+            "\t]",
+            "}"
+        ],
+        "description": "Generic Fluff block"
     }
 }
