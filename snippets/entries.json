@@ -194,7 +194,7 @@
             "{",
             "\t\"type\": \"gallery\",",
             "\t\"images\": [",
-            "\t\t$1",
+            "\t\t$TM_SELECTED_TEXT$1",
             "\t]",
             "}"
         ],
