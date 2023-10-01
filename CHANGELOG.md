@@ -2,6 +2,10 @@
 
 This project tries to adhere to [Semantic Versioning](https://semver.org/)
 
+## [0.1.16]
+- Update sources with `LK` and `MCV4EC`
+- Improve `gallery` snippet to wrap selected text
+
 ## [0.1.15]
 - Update sources with `PaBTSO`
 
