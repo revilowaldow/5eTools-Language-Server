@@ -15,8 +15,12 @@
 		"body": {
 			"contentName": "value.variable.5e",
 			"begin": "\\s",
-			"end": "(?=\\})|(?=\\\")",
+			"end": "(?=\\})",
 			"patterns": [
+				{
+					"match": "(?x)                # turn on extended mode\n  \\\\                # a literal backslash\n  (?:               # ...followed by...\n    [\"\\\\/bfnrt]     # one of these characters\n    |               # ...or...\n    u               # a u\n    [0-9a-fA-F]{4}) # and four hex digits",
+					"name": "constant.character.escape.5e"
+				},
 				{
 					"include": "#empty"
 				},
@@ -48,7 +52,7 @@
 		"tag": {
 			"name": "meta.structure.tag.5e",
 			"begin": "\\{(?=@)",
-			"end": "\\}|(?=\\\")",
+			"end": "\\}",
 			"beginCaptures": {
 				"0": {
 					"name": "punctuation.brace.open.5e"
@@ -88,7 +92,7 @@
 		},
 		"empty": {
 			"begin": "\\{(?!=@)",
-			"end": "\\}|(?=\\\")",
+			"end": "\\}",
 			"patterns": [
 				{
 					"include": "#tag"
