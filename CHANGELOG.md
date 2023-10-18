@@ -2,6 +2,9 @@
 
 This project tries to adhere to [Semantic Versioning](https://semver.org/)
 
+## [0.1.18]
+- Update Sources for Planescape
+
 ## [0.1.17]
 - Improve highlighting of escapes within tags
 
