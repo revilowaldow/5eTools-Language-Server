@@ -1,6 +1,6 @@
 # 5eTools Language Server
 
-A massive ripoff of [GoR](https://github.com/Git-GoR/5e-homebrew-snippets) and [Tree's](https://github.com/Jklein64/5e-syntax) extensions, taking what I believe to be the best of both, and dropping the rest.
+A massive ripoff of [GoR](https://github.com/Git-GoR/5e-homebrew-snippets) and [Tree's](https://github.com/Jklein64/5e-syntax) extensions (both MIT), taking what I believe to be the best of both, and dropping the rest.
 
 ## Notable changes:
 
