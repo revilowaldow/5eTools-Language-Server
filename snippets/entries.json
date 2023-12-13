@@ -220,7 +220,7 @@
         "body": [
             "{",
             "\t\"type\": \"statblock\",",
-            "\t\"tag\": \"${1|spell,item,creature,condition,disease,status,background,race,optfeature,reward,feat,psionic,object,cult,boon,trap,hazard,deity,variantrule,charoption,vehicle,vehupgrade,class,action,language,classFeature,subclassFeature,table,recipe,skill,sense,deck,legroup|}\",",            
+            "\t\"tag\": \"${1|action,background,boon,charoption,class,classFeature,condition,creature,cult,deity,deck,disease,feat,hazard,item,language,legroup,optfeature,object,psionic,race,recipe,reward,sense,skill,spell,status,subclassFeature,table,trap,variantrule,vehicle,vehupgrade|}\",",
             "\t\"source\": \"$2\",",
             "\t\"name\": \"$3\",",
             "\t\"page\": ${4:0}${5:,\n\t\"collapsed\": true}",
@@ -233,7 +233,7 @@
         "body": [
             "{",
             "\t\"type\": \"statblock\",",
-            "\t\"prop\": \"${1|subclass|}\",",            
+            "\t\"prop\": \"${1|subclass|}\",",
             "\t\"source\": \"$2\",",
             "\t\"name\": \"${3:Subclass ShortName}\",",
             "\t\"className\": \"$4\",",
