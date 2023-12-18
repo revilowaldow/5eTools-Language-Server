@@ -2,6 +2,11 @@
 
 This project tries to adhere to [Semantic Versioning](https://semver.org/)
 
+## [0.1.20]
+- Add snippets for recipes, including ingredient entry types with single and multiple scaling values
+- Update sources adding `GHLoE`, `HFStCM` & `PiP`; however the UA prerelease sources have been migrated out
+- Fix typos
+
 ## [0.1.19]
 - Update Sources (`CoA`,`HFFotM`,`BMT`)
 - Update tags (`cite`,`tip`)
