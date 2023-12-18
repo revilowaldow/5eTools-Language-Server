@@ -242,5 +242,28 @@
             "}"
         ],
         "description": "Use in text entries to embed the referenced subclass"
+    },
+    "ingredientSingle": {
+        "prefix": "ingredientSingle",
+        "body": [
+            "{",
+            "\t\"type\": \"ingredient\",",
+            "\t\"entry\": \"{=amount1/v} $TM_SELECTED_TEXT$1\",",
+            "\t\"amount1\": ${2:Ingredient Quantity}",
+            "}"
+        ],
+        "description": "A basic scalable ingredient entry for use in recipes."
+    },
+    "ingredientDouble": {
+        "prefix": "ingredientDouble",
+        "body": [
+            "{",
+            "\t\"type\": \"ingredient\",",
+            "\t\"entry\": \"{=amount1/v} / {=amount2/v} $TM_SELECTED_TEXT$1\",",
+            "\t\"amount1\": ${2:First Ingredient Quantity},",
+            "\t\"amount2\": ${3:Second Ingredient Quantity}",
+            "}"
+        ],
+        "description": "A scalable ingredient entry for use in recipes; contains two scalable values typically used for presenting both US conventional and metric units."
     }
 }

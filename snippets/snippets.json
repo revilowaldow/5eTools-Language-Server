@@ -333,5 +333,48 @@
             "}"
         ],
         "description": "Generic Fluff block"
+    },
+    "recipe": {
+        "prefix": "recipe",
+        "body": [
+            "{",
+            "\t\"name\": \"$1\",",
+            "\t\"source\": \"$2\",",
+            "\t\"page\": ${3:0},",
+            "\t\"type\": \"$4\",",
+            "\t\"diet\": \"${5|X,C,V|}\",",
+            "\t\"allergenGroups\": [",
+            "\t\t\"${6|celery,crustaceans,eggs,fish,gluten,lupin,milk,molluscs,mustard,nuts,peanuts,sesame,soya,sulphites|}\"",
+            "\t],",
+            "\t\"time\": {",
+            "\t\t\"cooking\": ${7:0},",
+            "\t\t\"preparation\": ${8:0}",
+            "\t},",
+            "\t\"makes\": \"$9\",",
+            "\t\"serves\": {",
+            "\t\t\"min\": ${10:0},",
+            "\t\t\"max\": ${11:1}",
+            "\t},",
+            "\t\"ingredients\": [",
+            "\t\t$12",
+            "\t],",
+            "\t\"equipment\": [",
+            "\t\t\"$13\"",
+            "\t],",
+            "\t\"instructions\": [",
+            "\t\t\"$14\"",
+            "\t],",
+            "\t\"noteCook\": [",
+            "\t\t\"$15\"",
+            "\t],${16:\n\t\"miscTags\": [\n\t\t\"alcohol\"\n\t],}",
+            "\t\"fluff\": {",
+            "\t\t\"_recipeFluff\": {",
+            "\t\t\t\"name\": \"$17\",",
+            "\t\t\t\"source\": \"$18\"",
+            "\t\t}",
+            "\t}",
+            "}"
+        ],
+        "description": "Recipe block"
     }
 }
