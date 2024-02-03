@@ -265,5 +265,14 @@
             "}"
         ],
         "description": "A scalable ingredient entry for use in recipes; contains two scalable values typically used for presenting both US conventional and metric units."
+    },
+    "horizontalRule": {
+        "prefix": "horizontalRule",
+        "body": [
+            "{",
+            "\t\"type\": \"hr\"",
+            "}"
+        ],
+        "description": "An entry to insert a horizontal ruled line."
     }
 }
