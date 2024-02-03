@@ -2,6 +2,10 @@
 
 This project tries to adhere to [Semantic Versioning](https://semver.org/)
 
+## [0.1.21]
+- Add horizontal rule snippet
+- Update sources adding `DoDk`
+
 ## [0.1.20]
 - Add snippets for recipes, including ingredient entry types with single and multiple scaling values
 - Update sources adding `GHLoE`, `HFStCM` & `PiP`; however the UA prerelease sources have been migrated out
