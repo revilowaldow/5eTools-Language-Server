@@ -2,6 +2,10 @@
 
 This project tries to adhere to [Semantic Versioning](https://semver.org/)
 
+## [0.1.22]
+- Add `DMTCRG`, `HWCS`, `HWAitW` & `TD` sources
+- Fix book snippet
+
 ## [0.1.21]
 - Add horizontal rule snippet
 - Update sources adding `DoDk`
