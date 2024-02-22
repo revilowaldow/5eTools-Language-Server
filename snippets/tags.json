@@ -114,7 +114,7 @@
     "Book tag": {
         "prefix": "@book",
         "body": [
-            "{@adventure $TM_SELECTED_TEXT|${1:source}|${2:chapter}|${3:heading}}"
+            "{@book $TM_SELECTED_TEXT|${1:source}|${2:chapter}|${3:heading}}"
         ],
         "description": "Tags a book, or a specific chapter/section of it"
     },
