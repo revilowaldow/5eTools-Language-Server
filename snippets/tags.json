@@ -48,14 +48,14 @@
         ],
         "description": "Renders as \"Hit: +n\". "
     },
-    "Difficulty CLass": {
+    "Difficulty Class": {
         "prefix": "@dc",
         "body": [
             "{@dc $TM_SELECTED_TEXT}"
         ],
         "description": "Renders as \"DC text\""
     },
-    "Chance roll": {
+    "Chance Roll": {
         "prefix": "@chance",
         "body": [
             "{@chance ${1:% of success: 'a roll higher than 100 minus this value'}|$TM_SELECTED_TEXT|${2:rolled by name}|${3:on success text}|${4:on failure text}}"
@@ -69,21 +69,35 @@
         ],
         "description": "Make a coin flip with custom face names/outcomes"
     },
-    "Damage roll": {
+    "Damage Roll": {
         "prefix": "@damage",
         "body": [
             "{@damage $TM_SELECTED_TEXT}"
         ],
         "description": "Rolls for damage, with an XdY format (can use arithmetic operators)"
     },
-    "Dice roll": {
+    "Scaled Damage Roll": {
+        "prefix": "@scaledamage",
+        "body": [
+            "{@scaledamage ${1:initial dice}|${2:2-9}|$TM_SELECTED_TEXT|${3:psi}|${4:display text}}"
+        ],
+        "description": "A scaled damage roll, used for spells or psionic abilities where damage dice scale with cast level, or expended points."
+    },
+    "Dice Roll": {
         "prefix": "@dice",
         "body": [
             "{@dice $TM_SELECTED_TEXT|${1:display text}|${2:rolled by name}}"
         ],
         "description": "A general dice roll, with an XdY format (can use arithmetic operators)"
     },
-    "Note text": {
+    "Scaled Dice Roll": {
+        "prefix": "@scaledice",
+        "body": [
+            "{@scaledice ${1:initial dice}|${2:1,3,5,7,9}|$TM_SELECTED_TEXT|${3:psi}|${4:display text}}"
+        ],
+        "description": "A scaled dice roll, used for spells or psionic abilities where dice scale with cast level, or expended points."
+    },
+    "Note Text": {
         "prefix": "@note",
         "body": [
             "{@note $TM_SELECTED_TEXT}"
@@ -181,7 +195,7 @@
         ],
         "description": "Tags a boon. Source is assumed to be MTF"
     },
-    "Character creation option tag": {
+    "Character Creation Option tag": {
         "prefix": "@charoption",
         "body": [
             "{@charoption $TM_SELECTED_TEXT|${1:source}|${2:optional text}}"
@@ -265,7 +279,7 @@
         ],
         "description": "Tags an object. Source is assumed to be DMG"
     },
-    "Optional feature tag": {
+    "Optional Feature tag": {
         "prefix": "@optfeature",
         "body": [
             "{@optfeature $TM_SELECTED_TEXT|${1:source}|${2:optional text}}"
@@ -307,7 +321,7 @@
         ],
         "description": "Tags a vehicle. Source is assumed to be GoS"
     },
-    "Vehicle upgrade tag": {
+    "Vehicle Upgrade tag": {
         "prefix": "@vehupgrade",
         "body": [
             "{@vehupgrade $TM_SELECTED_TEXT|${1:source}|${2:optional text}}"
@@ -335,7 +349,7 @@
         ],
         "description": "Tags a trap. Source is assumed to be DMG"
     },
-    "Variant rule tag": {
+    "Variant Rule tag": {
         "prefix": "@variantrule",
         "body": [
             "{@variantrule $TM_SELECTED_TEXT|${1:source}|${2:optional text}}"
@@ -349,14 +363,14 @@
         ],
         "description": "Tags a variant rule. Source is assumed to be PHB, Faerûnian pantheon"
     },
-    "Class feature tag": {
+    "Class Feature tag": {
         "prefix": "@classFeature",
         "body": [
             "{@classFeature $TM_SELECTED_TEXT|${1:class}|${2:class source}|${3:level}|${4:feature source}|${5:optional text}}"
         ],
         "description": "Tags a class feature. Class source is assumed to be PHB, feature source is assumed to be the same as class source"
     },
-    "Subclass feature tag": {
+    "Subclass Feature tag": {
         "prefix": "@subclassFeature",
         "body": [
             "{@subclassFeature $TM_SELECTED_TEXT|${1:class}|${2:class source}|${3:subclass}|${4:subclass source}|${5:level}|${6:feature source}|${7:optional text}}"
