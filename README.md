@@ -1,5 +1,9 @@
 # 5eTools Language Server
 
+Available at both:
+- VSCode: https://marketplace.visualstudio.com/items?itemName=revilowaldow.5etools-language-server
+- VSCo~p~*d*ium: https://open-vsx.org/extension/revilowaldow/5etools-language-server
+
 A massive ripoff of [GoR](https://github.com/Git-GoR/5e-homebrew-snippets) and [Tree's](https://github.com/Jklein64/5e-syntax) extensions (both MIT), taking what I believe to be the best of both, and dropping the rest.
 
 ## Notable changes:
