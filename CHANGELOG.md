@@ -2,6 +2,9 @@
 
 This project tries to adhere to [Semantic Versioning](https://semver.org/)
 
+## [0.1.23]
+- Add `scaledice` and `scaledamage` tag snippets
+
 ## [0.1.22]
 - Add `DMTCRG`, `HWCS`, `HWAitW` & `TD` sources
 - Fix book snippet
