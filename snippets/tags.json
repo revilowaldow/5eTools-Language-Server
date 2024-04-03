@@ -20,12 +20,26 @@
         ],
         "description": "Strikethrough Text"
     },
+    "Double Strikethrough Text": {
+        "prefix": "@strikeDouble",
+        "body": [
+            "{@s $TM_SELECTED_TEXT}"
+        ],
+        "description": "Double Strikethrough Text"
+    },
     "Underline Text": {
         "prefix": "@underline",
         "body": [
             "{@u $TM_SELECTED_TEXT}"
         ],
         "description": "Underline Text"
+    },
+    "Double Underline Text": {
+        "prefix": "@underlineDouble",
+        "body": [
+            "{@u $TM_SELECTED_TEXT}"
+        ],
+        "description": "Double Underline Text"
     },
     "Unit": {
         "prefix": "@unit",
