@@ -2,6 +2,11 @@
 
 This project tries to adhere to [Semantic Versioning](https://semver.org/)
 
+## [0.1.24]
+- Add `strikeDouble` and `underlineDouble` tag snippets
+- Update sources (`QftIS`, `ToB1-2023`, `DitLCoT` & `LRDT`)
+- Update syntax keywords to include `s2`, `strikeDouble`, `u2` & `underlineDouble`
+
 ## [0.1.23]
 - Add `scaledice` and `scaledamage` tag snippets
 
