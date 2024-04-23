@@ -2,6 +2,10 @@
 
 This project tries to adhere to [Semantic Versioning](https://semver.org/)
 
+## [0.1.25]
+- Add `5etoolsImg` tag for internal media references
+- Update sources (`VNotEE` & `VEoR`)
+
 ## [0.1.24]
 - Add `strikeDouble` and `underlineDouble` tag snippets
 - Update sources (`QftIS`, `ToB1-2023`, `DitLCoT` & `LRDT`)
