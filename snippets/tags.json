@@ -405,6 +405,13 @@
         ],
         "description": "Links within the same base site url, use for links to the site"
     },
+    "5eTools Media/Image tag": {
+        "prefix": "@5etoolsImg",
+        "body": [
+            "{@5etoolsImg $TM_SELECTED_TEXT|${1:page link}}"
+        ],
+        "description": "Links to 5etools media files, compensating for local and remote pdf and img directories."
+    },
     "Loader tag": {
         "prefix": "@loader",
         "body": [
