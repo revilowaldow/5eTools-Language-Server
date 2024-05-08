@@ -143,6 +143,16 @@
         ],
         "description": "Reference a subclass feature inside a subclass"
     },
+    "refClassFeature": {
+        "prefix": "refSubclassFeature",
+        "body": [
+            "{",
+            "\t\"type\": \"refSubclassFeature\",",
+            "\t\"classFeature\": \"${1:<name>}|${2:<className>}|${3:<classSource>}|${4:<featureLevel>}|${5:<featureSource>}\"",
+            "}"
+        ],
+        "description": "Reference a class feature in the entries of another feature"
+    },
     "refSubclassFeature": {
         "prefix": "refSubclassFeature",
         "body": [
@@ -152,5 +162,15 @@
             "}"
         ],
         "description": "Reference a subclass feature in the entries of another feature"
+    },
+    "refOptionalfeature": {
+        "prefix": "refOptionalfeature",
+        "body": [
+            "{",
+            "\t\"type\": \"refOptionalfeature\",",
+            "\t\"optionalfeature\": \"${1:<name>}|${2:<featureSource>}\"",
+            "}"
+        ],
+        "description": "Reference an optional feature in the entries of a (sub)class feature"
     }
 }
