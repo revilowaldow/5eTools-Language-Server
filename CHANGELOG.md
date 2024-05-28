@@ -2,6 +2,9 @@
 
 This project tries to adhere to [Semantic Versioning](https://semver.org/)
 
+## [0.1.29]
+- Fix typo
+
 ## [0.1.28]
 - Add `entriesPageless` and `basicList` snippets (Thanks @Billiam9420 )
 
