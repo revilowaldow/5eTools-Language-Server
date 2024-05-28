@@ -39,6 +39,19 @@
         ],
         "description": "Headless entries block, for going down one header level."
     },
+    "entriesPageless": {
+        "prefix": "entriesPageless",
+        "body": [
+            "{",
+            "\t\"type\": \"entries\",",
+            "\t\"name\": \"$1\",",
+            "\t\"entries\": [",
+            "\t\t\"TM_SELECTED_TEXT$2\"",
+            "\t]",
+            "}"
+        ],
+        "description": "Entries block with no page number, for nested entries"
+    },
     "quote": {
         "prefix": "quote",
         "body": [
@@ -72,7 +85,7 @@
         "body": [
             "{",
             "\t\"type\": \"insetReadaloud\",",
-			"\t\"page\": ${1:0},",
+            "\t\"page\": ${1:0},",
             "\t\"name\": \"$2\",",
             "\t\"entries\": [",
             "\t\t\"$TM_SELECTED_TEXT$3\"",
@@ -88,14 +101,26 @@
             "\t\"type\": \"list\",",
             "\t\"style\": \"${1|list-hang,list-hang-notitle,list-no-bullets,list-decimal,list-lower-roman,list-upper-roman|}\",",
             "\t\"columns\": ${2:0},",
-			"\t\"page\": ${3:0},",
+            "\t\"page\": ${3:0},",
             "\t\"name\": \"$4\",",
             "\t\"items\": [",
             "\t\t\"$TM_SELECTED_TEXT$5\"",
             "\t]",
             "}"
         ],
-        "description": "List with style options. Remove the style line for default one with bullet points"
+        "description": "List with style options. Remove the style line for default bullet points"
+    },
+    "basicList": {
+        "prefix": "basicList",
+        "body": [
+            "{",
+            "\t\"type\": \"list\",",
+            "\t\"items\": [",
+            "\t\t\"$TM_SELECTED_TEXT$1\"",
+            "\t]",
+            "}"
+        ],
+        "description": "Default list with bullet points"
     },
     "listItem": {
         "prefix": "listItem",
@@ -116,7 +141,7 @@
             "{",
             "\t\"type\": \"table\",",
             "\t\"caption\": \"${1:Optional Caption}\",",
-			"\t\"page\": ${2:0},",
+            "\t\"page\": ${2:0},",
             "\t\"colLabels\": [",
             "\t\t\"$3\",",
             "\t\t\"$4\"",
@@ -159,7 +184,7 @@
             "\t]",
             "}"
         ],
-        "description": "Centered text with the format 'Name save DC = 8 + prof + mod'"
+        "description": "Centered text with the format 'Name save DC = 8 + prof + mod', multiple abilities give a choice"
     },
     "abilityAttackMod": {
         "prefix": "abilityAttackMod",
@@ -172,7 +197,7 @@
             "\t]",
             "}"
         ],
-        "description": "Centered text with the format 'Name attack modifier = prof + mod'"
+        "description": "Centered text with the format 'Name attack modifier = prof + mod', multiple abilities give a choice"
     },
     "abilityGeneric": {
         "prefix": "abilityGeneric",
@@ -186,7 +211,7 @@
             "\t]",
             "}"
         ],
-        "description": "Centered text with the format 'Name  = text + mod'"
+        "description": "Centered text with the format 'Name  = text + mod', multiple abilities give a choice"
     },
     "gallery": {
         "prefix": "gallery",
