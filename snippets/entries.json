@@ -46,7 +46,7 @@
             "\t\"type\": \"entries\",",
             "\t\"name\": \"$1\",",
             "\t\"entries\": [",
-            "\t\t\"TM_SELECTED_TEXT$2\"",
+            "\t\t\"$TM_SELECTED_TEXT$2\"",
             "\t]",
             "}"
         ],
