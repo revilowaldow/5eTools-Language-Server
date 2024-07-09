@@ -127,7 +127,7 @@
             "\t]",
             "}"
         ],
-        "description": "Condition object"
+        "description": "Citation object for custom tooltips."
     },
     "condition": {
         "prefix": "condition",

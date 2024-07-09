@@ -494,6 +494,6 @@
         "body": [
             "{@cite $TM_SELECTED_TEXT|${1:source}|${2:optional text}}"
         ],
-        "description": "Text in a specified standard or custom font"
+        "description": "Text to hover over for tooltips."
     }
 }
