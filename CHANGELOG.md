@@ -2,6 +2,12 @@
 
 This project tries to adhere to [Semantic Versioning](https://semver.org/)
 
+## [0.1.30]
+- Add `adventure`, `book`, `adventureData`, `bookData` and `citation` content snippets (Thanks @Billiam9420 )
+- Add `@citation` tag  (Thanks @Billiam9420 )
+- Fix case in property names
+- Clean formatting
+
 ## [0.1.29]
 - Fix typo
 
