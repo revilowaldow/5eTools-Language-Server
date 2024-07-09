@@ -488,5 +488,12 @@
             "{@font $TM_SELECTED_TEXT|${1:font name}}"
         ],
         "description": "Text in a specified standard or custom font"
+    },
+    "Citation": {
+        "prefix": "@cite",
+        "body": [
+            "{@cite $TM_SELECTED_TEXT|${1:source}|${2:optional text}}"
+        ],
+        "description": "Text in a specified standard or custom font"
     }
 }

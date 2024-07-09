@@ -115,6 +115,20 @@
         ],
         "description": "Boon object"
     },
+    "citation": {
+        "prefix": "citation",
+        "body": [
+            "{",
+            "\t\"name\": \"$1\",",
+            "\t\"source\": \"$2\",",
+            "\t\"page\": ${3:0},",
+            "\t\"entries\": [",
+            "\t\t\"$4\"",
+            "\t]",
+            "}"
+        ],
+        "description": "Condition object"
+    },
     "condition": {
         "prefix": "condition",
         "body": [
