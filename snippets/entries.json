@@ -299,5 +299,31 @@
             "}"
         ],
         "description": "An entry to insert a horizontal ruled line."
+    },
+    "book": {
+        "prefix": "book",
+        "body": [
+            "{",
+            "\t\"name\": \"$1\",",
+            "\t\"id\": \"$2\",",
+            "\t\"source\": \"$3\",",
+            "\t\"group\": \"$4\",",
+            "\t\"author\": \"$5\",",
+            "\t\"published\": \"$6\",",
+            "\t\"contents\": [",
+            "\t\t{",
+            "\t\t\t\"name\": \"$7\",",
+            "\t\t\t\"headers\": [",
+            "\t\t\t\t\"$8\",",
+            "\t\t\t\t{",
+            "\t\t\t\t\t\"header\": \"$9\",",
+            "\t\t\t\t\t\"depth\": ${10:1}",
+            "\t\t\t\t}",
+            "\t\t\t]",
+            "\t\t}",
+            "\t]",
+            "}"
+        ],
+        "description": "The first part of making a book."
     }
 }
