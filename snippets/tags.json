@@ -435,7 +435,7 @@
 	},
 	"Recharge tag": {
 		"prefix": "@recharge",
-		"body":[
+		"body": [
 			"{@recharge ${1|6,5,4,3,2,1|}}"
 		],
 		"description": "Outputs success/failure for ability recharge"

@@ -1,39 +1,39 @@
 {
-    "_meta": {
-        "prefix": "meta",
-        "body": [
-            "\"_meta\": {",
-            "\t\"sources\": [",
-            "\t\t{",
-            "\t\t\t\"json\": \"$1\",",
-            "\t\t\t\"abbreviation\": \"$2\",",
-            "\t\t\t\"full\": \"$3\",",
-            "\t\t\t\"authors\": [",
-            "\t\t\t\t\"$4\"",
-            "\t\t\t],",
-            "\t\t\t\"convertedBy\": [",
-            "\t\t\t\t\"$5\"",
-            "\t\t\t],",
-            "\t\t\t\"version\": \"$6\",",
-            "\t\t\t\"color\": \"${7:ffffff}\",",
-            "\t\t\t\"url\": \"$8\",",
-            "\t\t\t\"dateReleased\": \"${9:yyyy-mm-dd}\"",
-            "\t\t}",
-            "\t],",
-            "\t\"status\": \"${10|wip,deprecated,ready,invalid|}\",",
-            "\t\"dateAdded\": $CURRENT_SECONDS_UNIX,",
-            "\t\"dateLastModified\": $CURRENT_SECONDS_UNIX",
-            "}"
-        ],
-        "description": "Full basic _meta"
-    },
-    "unixDate": {
-        "prefix": "unixDate",
-        "body": [
-            "$CURRENT_SECONDS_UNIX"
-        ],
-        "description": "The number of seconds since the Unix epoch"
-    },
+	"_meta": {
+		"prefix": "meta",
+		"body": [
+			"\"_meta\": {",
+			"\t\"sources\": [",
+			"\t\t{",
+			"\t\t\t\"json\": \"$1\",",
+			"\t\t\t\"abbreviation\": \"$2\",",
+			"\t\t\t\"full\": \"$3\",",
+			"\t\t\t\"authors\": [",
+			"\t\t\t\t\"$4\"",
+			"\t\t\t],",
+			"\t\t\t\"convertedBy\": [",
+			"\t\t\t\t\"$5\"",
+			"\t\t\t],",
+			"\t\t\t\"version\": \"$6\",",
+			"\t\t\t\"color\": \"${7:ffffff}\",",
+			"\t\t\t\"url\": \"$8\",",
+			"\t\t\t\"dateReleased\": \"${9:yyyy-mm-dd}\"",
+			"\t\t}",
+			"\t],",
+			"\t\"status\": \"${10|wip,deprecated,ready,invalid|}\",",
+			"\t\"dateAdded\": $CURRENT_SECONDS_UNIX,",
+			"\t\"dateLastModified\": $CURRENT_SECONDS_UNIX",
+			"}"
+		],
+		"description": "Full basic _meta"
+	},
+	"unixDate": {
+		"prefix": "unixDate",
+		"body": [
+			"$CURRENT_SECONDS_UNIX"
+		],
+		"description": "The number of seconds since the Unix epoch"
+	},
 	"$schema": {
 		"prefix": "$schema",
 		"body": [

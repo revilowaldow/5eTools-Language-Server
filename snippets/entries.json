@@ -1,303 +1,303 @@
 {
-    "section": {
-        "prefix": "section",
-        "body": [
-            "{",
-            "\t\"type\": \"section\",",
-            "\t\"name\": \"$1\",",
-            "\t\"page\": ${2:0},",
-            "\t\"entries\": [",
-            "\t\t\"$TM_SELECTED_TEXT$3\"",
-            "\t]",
-            "}"
-        ],
-        "description": "Section entry, creates a level -1 header"
-    },
-    "entries": {
-        "prefix": "entries",
-        "body": [
-            "{",
-            "\t\"type\": \"entries\",",
-            "\t\"name\": \"$1\",",
-            "\t\"page\": ${2:0},",
-            "\t\"entries\": [",
-            "\t\t\"$TM_SELECTED_TEXT$3\"",
-            "\t]",
-            "}"
-        ],
-        "description": "Entries block, for basic text"
-    },
-    "entriesHeadless": {
-        "prefix": "entriesHeadless",
-        "body": [
-            "{",
-            "\t\"type\": \"entries\",",
-            "\t\"entries\": [",
-            "\t\t$TM_SELECTED_TEXT$0",
-            "\t]",
-            "}"
-        ],
-        "description": "Headless entries block, for going down one header level."
-    },
-    "entriesPageless": {
-        "prefix": "entriesPageless",
-        "body": [
-            "{",
-            "\t\"type\": \"entries\",",
-            "\t\"name\": \"$1\",",
-            "\t\"entries\": [",
-            "\t\t\"$TM_SELECTED_TEXT$2\"",
-            "\t]",
-            "}"
-        ],
-        "description": "Entries block with no page number, for nested entries"
-    },
-    "quote": {
-        "prefix": "quote",
-        "body": [
-            "{",
-            "\t\"type\": \"quote\",",
-            "\t\"entries\": [",
-            "\t\t\"$TM_SELECTED_TEXT$1\"",
-            "\t],",
-            "\t\"by\": \"${2:This can also be an array}\",",
-            "\t\"from\": \"$3\"",
-            "}"
-        ],
-        "description": "Quote block"
-    },
-    "inset": {
-        "prefix": "inset",
-        "body": [
-            "{",
-            "\t\"type\": \"inset\",",
-            "\t\"page\": ${1:0},",
-            "\t\"name\": \"$2\",",
-            "\t\"entries\": [",
-            "\t\t\"$TM_SELECTED_TEXT$3\"",
-            "\t]",
-            "}"
-        ],
-        "description": "Inset block"
-    },
-    "insetReadaloud": {
-        "prefix": "insetReadaloud",
-        "body": [
-            "{",
-            "\t\"type\": \"insetReadaloud\",",
-            "\t\"page\": ${1:0},",
-            "\t\"name\": \"$2\",",
-            "\t\"entries\": [",
-            "\t\t\"$TM_SELECTED_TEXT$3\"",
-            "\t]",
-            "}"
-        ],
-        "description": "Inset block, but on blue color"
-    },
-    "list": {
-        "prefix": "list",
-        "body": [
-            "{",
-            "\t\"type\": \"list\",",
-            "\t\"style\": \"${1|list-hang,list-hang-notitle,list-no-bullets,list-decimal,list-lower-roman,list-upper-roman|}\",",
-            "\t\"columns\": ${2:0},",
-            "\t\"page\": ${3:0},",
-            "\t\"name\": \"$4\",",
-            "\t\"items\": [",
-            "\t\t\"$TM_SELECTED_TEXT$5\"",
-            "\t]",
-            "}"
-        ],
-        "description": "List with style options. Remove the style line for default bullet points"
-    },
-    "basicList": {
-        "prefix": "basicList",
-        "body": [
-            "{",
-            "\t\"type\": \"list\",",
-            "\t\"items\": [",
-            "\t\t\"$TM_SELECTED_TEXT$1\"",
-            "\t]",
-            "}"
-        ],
-        "description": "Default list with bullet points"
-    },
-    "listItem": {
-        "prefix": "listItem",
-        "body": [
-            "{",
-            "\t\"type\": \"item\",",
-            "\t\"name\": \"$1\",",
-            "\t\"entries\": [",
-            "\t\t\"$TM_SELECTED_TEXT$2\"",
-            "\t]",
-            "}"
-        ],
-        "description": "An item within a list"
-    },
-    "tableEntry": {
-        "prefix": "tableEntry",
-        "body": [
-            "{",
-            "\t\"type\": \"table\",",
-            "\t\"caption\": \"${1:Optional Caption}\",",
-            "\t\"page\": ${2:0},",
-            "\t\"colLabels\": [",
-            "\t\t\"$3\",",
-            "\t\t\"$4\"",
-            "\t],",
-            "\t\"colStyles\": [",
-            "\t\t\"col-$5 text-$6\",",
-            "\t\t\"col-$7 text-\"",
-            "\t],",
-            "\t\"intro\": [",
-            "\t\t\"${8:Optional intro entries.}\"",
-            "\t],",
-            "\t\"outro\": [",
-            "\t\t\"${9:Optional outro entries.}\"",
-            "\t],",
-            "\t\"rows\": [",
-            "\t\t[",
-            "\t\t\t\"$10\",",
-            "\t\t\t\"$11\"",
-            "\t\t],",
-            "\t\t[",
-            "\t\t\t\"$12\",",
-            "\t\t\t\"$13\"",
-            "\t\t]",
-            "\t],",
-            "\t\"footnotes\": [",
-            "\t\t\"${14:Optional Footer}\"",
-            "\t]",
-            "}"
-        ],
-        "description": "Table block used within text entries"
-    },
-    "abilityDC": {
-        "prefix": "abilityDC",
-        "body": [
-            "{",
-            "\t\"type\": \"abilityDc\",",
-            "\t\"name\": \"$1\",",
-            "\t\"attributes\": [",
-            "\t\t\"${2|str,dex,con,int,wis,cha|}\"",
-            "\t]",
-            "}"
-        ],
-        "description": "Centered text with the format 'Name save DC = 8 + prof + mod', multiple abilities give a choice"
-    },
-    "abilityAttackMod": {
-        "prefix": "abilityAttackMod",
-        "body": [
-            "{",
-            "\t\"type\": \"abilityAttackMod\",",
-            "\t\"name\": \"$1\",",
-            "\t\"attributes\": [",
-            "\t\t\"${2|str,dex,con,int,wis,cha|}\"",
-            "\t]",
-            "}"
-        ],
-        "description": "Centered text with the format 'Name attack modifier = prof + mod', multiple abilities give a choice"
-    },
-    "abilityGeneric": {
-        "prefix": "abilityGeneric",
-        "body": [
-            "{",
-            "\t\"type\": \"abilityGeneric\",",
-            "\t\"name\": \"$1\",",
-            "\t\"text\": \"$2\",",
-            "\t\"attributes\": [",
-            "\t\t\"${3|str,dex,con,int,wis,cha|}\"",
-            "\t]",
-            "}"
-        ],
-        "description": "Centered text with the format 'Name  = text + mod', multiple abilities give a choice"
-    },
-    "gallery": {
-        "prefix": "gallery",
-        "body": [
-            "{",
-            "\t\"type\": \"gallery\",",
-            "\t\"images\": [",
-            "\t\t$TM_SELECTED_TEXT$1",
-            "\t]",
-            "}"
-        ],
-        "description": "A gallery entry that can contain multiple images."
-    },
-    "image": {
-        "prefix": "image",
-        "body": [
-            "{",
-            "\t\"type\": \"image\",",
-            "\t\"href\": {",
-            "\t\t\"type\": \"external\",",
-            "\t\t\"url\": \"$1\"",
-            "\t},",
-            "\t\"title\": \"${2:Optional Title}\",",
-            "\t\"credit\": \"${3:Optional Artist Credit}\"",
-            "}"
-        ],
-        "description": "External image link"
-    },
-    "statblock": {
-        "prefix": "statblock",
-        "body": [
-            "{",
-            "\t\"type\": \"statblock\",",
-            "\t\"tag\": \"${1|action,background,boon,charoption,class,classFeature,condition,creature,cult,deity,deck,disease,feat,hazard,item,language,legroup,optfeature,object,psionic,race,recipe,reward,sense,skill,spell,status,subclassFeature,table,trap,variantrule,vehicle,vehupgrade|}\",",
-            "\t\"source\": \"$2\",",
-            "\t\"name\": \"$3\",",
-            "\t\"page\": ${4:0}${5:,\n\t\"collapsed\": true}",
-            "}"
-        ],
-        "description": "Use in text entries to embed the referenced data. (Sub)class features need extra properties"
-    },
-    "statblockProp": {
-        "prefix": "statblockProp",
-        "body": [
-            "{",
-            "\t\"type\": \"statblock\",",
-            "\t\"prop\": \"${1|subclass|}\",",
-            "\t\"source\": \"$2\",",
-            "\t\"name\": \"${3:Subclass ShortName}\",",
-            "\t\"className\": \"$4\",",
-            "\t\"classSource\": \"$5\",",
-            "\t\"page\": ${6:0}${7:,\n\t\"collapsed\": true}",
-            "}"
-        ],
-        "description": "Use in text entries to embed the referenced subclass"
-    },
-    "ingredientSingle": {
-        "prefix": "ingredientSingle",
-        "body": [
-            "{",
-            "\t\"type\": \"ingredient\",",
-            "\t\"entry\": \"{=amount1/v} $TM_SELECTED_TEXT$1\",",
-            "\t\"amount1\": ${2:Ingredient Quantity}",
-            "}"
-        ],
-        "description": "A basic scalable ingredient entry for use in recipes."
-    },
-    "ingredientDouble": {
-        "prefix": "ingredientDouble",
-        "body": [
-            "{",
-            "\t\"type\": \"ingredient\",",
-            "\t\"entry\": \"{=amount1/v} / {=amount2/v} $TM_SELECTED_TEXT$1\",",
-            "\t\"amount1\": ${2:First Ingredient Quantity},",
-            "\t\"amount2\": ${3:Second Ingredient Quantity}",
-            "}"
-        ],
-        "description": "A scalable ingredient entry for use in recipes; contains two scalable values typically used for presenting both US conventional and metric units."
-    },
-    "horizontalRule": {
-        "prefix": "horizontalRule",
-        "body": [
-            "{",
-            "\t\"type\": \"hr\"",
-            "}"
-        ],
-        "description": "An entry to insert a horizontal ruled line."
-    }
+	"section": {
+		"prefix": "section",
+		"body": [
+			"{",
+			"\t\"type\": \"section\",",
+			"\t\"name\": \"$1\",",
+			"\t\"page\": ${2:0},",
+			"\t\"entries\": [",
+			"\t\t\"$TM_SELECTED_TEXT$3\"",
+			"\t]",
+			"}"
+		],
+		"description": "Section entry, creates a level -1 header"
+	},
+	"entries": {
+		"prefix": "entries",
+		"body": [
+			"{",
+			"\t\"type\": \"entries\",",
+			"\t\"name\": \"$1\",",
+			"\t\"page\": ${2:0},",
+			"\t\"entries\": [",
+			"\t\t\"$TM_SELECTED_TEXT$3\"",
+			"\t]",
+			"}"
+		],
+		"description": "Entries block, for basic text"
+	},
+	"entriesHeadless": {
+		"prefix": "entriesHeadless",
+		"body": [
+			"{",
+			"\t\"type\": \"entries\",",
+			"\t\"entries\": [",
+			"\t\t$TM_SELECTED_TEXT$0",
+			"\t]",
+			"}"
+		],
+		"description": "Headless entries block, for going down one header level."
+	},
+	"entriesPageless": {
+		"prefix": "entriesPageless",
+		"body": [
+			"{",
+			"\t\"type\": \"entries\",",
+			"\t\"name\": \"$1\",",
+			"\t\"entries\": [",
+			"\t\t\"$TM_SELECTED_TEXT$2\"",
+			"\t]",
+			"}"
+		],
+		"description": "Entries block with no page number, for nested entries"
+	},
+	"quote": {
+		"prefix": "quote",
+		"body": [
+			"{",
+			"\t\"type\": \"quote\",",
+			"\t\"entries\": [",
+			"\t\t\"$TM_SELECTED_TEXT$1\"",
+			"\t],",
+			"\t\"by\": \"${2:This can also be an array}\",",
+			"\t\"from\": \"$3\"",
+			"}"
+		],
+		"description": "Quote block"
+	},
+	"inset": {
+		"prefix": "inset",
+		"body": [
+			"{",
+			"\t\"type\": \"inset\",",
+			"\t\"page\": ${1:0},",
+			"\t\"name\": \"$2\",",
+			"\t\"entries\": [",
+			"\t\t\"$TM_SELECTED_TEXT$3\"",
+			"\t]",
+			"}"
+		],
+		"description": "Inset block"
+	},
+	"insetReadaloud": {
+		"prefix": "insetReadaloud",
+		"body": [
+			"{",
+			"\t\"type\": \"insetReadaloud\",",
+			"\t\"page\": ${1:0},",
+			"\t\"name\": \"$2\",",
+			"\t\"entries\": [",
+			"\t\t\"$TM_SELECTED_TEXT$3\"",
+			"\t]",
+			"}"
+		],
+		"description": "Inset block, but on blue color"
+	},
+	"list": {
+		"prefix": "list",
+		"body": [
+			"{",
+			"\t\"type\": \"list\",",
+			"\t\"style\": \"${1|list-hang,list-hang-notitle,list-no-bullets,list-decimal,list-lower-roman,list-upper-roman|}\",",
+			"\t\"columns\": ${2:0},",
+			"\t\"page\": ${3:0},",
+			"\t\"name\": \"$4\",",
+			"\t\"items\": [",
+			"\t\t\"$TM_SELECTED_TEXT$5\"",
+			"\t]",
+			"}"
+		],
+		"description": "List with style options. Remove the style line for default bullet points"
+	},
+	"basicList": {
+		"prefix": "basicList",
+		"body": [
+			"{",
+			"\t\"type\": \"list\",",
+			"\t\"items\": [",
+			"\t\t\"$TM_SELECTED_TEXT$1\"",
+			"\t]",
+			"}"
+		],
+		"description": "Default list with bullet points"
+	},
+	"listItem": {
+		"prefix": "listItem",
+		"body": [
+			"{",
+			"\t\"type\": \"item\",",
+			"\t\"name\": \"$1\",",
+			"\t\"entries\": [",
+			"\t\t\"$TM_SELECTED_TEXT$2\"",
+			"\t]",
+			"}"
+		],
+		"description": "An item within a list"
+	},
+	"tableEntry": {
+		"prefix": "tableEntry",
+		"body": [
+			"{",
+			"\t\"type\": \"table\",",
+			"\t\"caption\": \"${1:Optional Caption}\",",
+			"\t\"page\": ${2:0},",
+			"\t\"colLabels\": [",
+			"\t\t\"$3\",",
+			"\t\t\"$4\"",
+			"\t],",
+			"\t\"colStyles\": [",
+			"\t\t\"col-$5 text-$6\",",
+			"\t\t\"col-$7 text-\"",
+			"\t],",
+			"\t\"intro\": [",
+			"\t\t\"${8:Optional intro entries.}\"",
+			"\t],",
+			"\t\"outro\": [",
+			"\t\t\"${9:Optional outro entries.}\"",
+			"\t],",
+			"\t\"rows\": [",
+			"\t\t[",
+			"\t\t\t\"$10\",",
+			"\t\t\t\"$11\"",
+			"\t\t],",
+			"\t\t[",
+			"\t\t\t\"$12\",",
+			"\t\t\t\"$13\"",
+			"\t\t]",
+			"\t],",
+			"\t\"footnotes\": [",
+			"\t\t\"${14:Optional Footer}\"",
+			"\t]",
+			"}"
+		],
+		"description": "Table block used within text entries"
+	},
+	"abilityDC": {
+		"prefix": "abilityDC",
+		"body": [
+			"{",
+			"\t\"type\": \"abilityDc\",",
+			"\t\"name\": \"$1\",",
+			"\t\"attributes\": [",
+			"\t\t\"${2|str,dex,con,int,wis,cha|}\"",
+			"\t]",
+			"}"
+		],
+		"description": "Centered text with the format 'Name save DC = 8 + prof + mod', multiple abilities give a choice"
+	},
+	"abilityAttackMod": {
+		"prefix": "abilityAttackMod",
+		"body": [
+			"{",
+			"\t\"type\": \"abilityAttackMod\",",
+			"\t\"name\": \"$1\",",
+			"\t\"attributes\": [",
+			"\t\t\"${2|str,dex,con,int,wis,cha|}\"",
+			"\t]",
+			"}"
+		],
+		"description": "Centered text with the format 'Name attack modifier = prof + mod', multiple abilities give a choice"
+	},
+	"abilityGeneric": {
+		"prefix": "abilityGeneric",
+		"body": [
+			"{",
+			"\t\"type\": \"abilityGeneric\",",
+			"\t\"name\": \"$1\",",
+			"\t\"text\": \"$2\",",
+			"\t\"attributes\": [",
+			"\t\t\"${3|str,dex,con,int,wis,cha|}\"",
+			"\t]",
+			"}"
+		],
+		"description": "Centered text with the format 'Name  = text + mod', multiple abilities give a choice"
+	},
+	"gallery": {
+		"prefix": "gallery",
+		"body": [
+			"{",
+			"\t\"type\": \"gallery\",",
+			"\t\"images\": [",
+			"\t\t$TM_SELECTED_TEXT$1",
+			"\t]",
+			"}"
+		],
+		"description": "A gallery entry that can contain multiple images."
+	},
+	"image": {
+		"prefix": "image",
+		"body": [
+			"{",
+			"\t\"type\": \"image\",",
+			"\t\"href\": {",
+			"\t\t\"type\": \"external\",",
+			"\t\t\"url\": \"$1\"",
+			"\t},",
+			"\t\"title\": \"${2:Optional Title}\",",
+			"\t\"credit\": \"${3:Optional Artist Credit}\"",
+			"}"
+		],
+		"description": "External image link"
+	},
+	"statblock": {
+		"prefix": "statblock",
+		"body": [
+			"{",
+			"\t\"type\": \"statblock\",",
+			"\t\"tag\": \"${1|action,background,boon,charoption,class,classFeature,condition,creature,cult,deity,deck,disease,feat,hazard,item,language,legroup,optfeature,object,psionic,race,recipe,reward,sense,skill,spell,status,subclassFeature,table,trap,variantrule,vehicle,vehupgrade|}\",",
+			"\t\"source\": \"$2\",",
+			"\t\"name\": \"$3\",",
+			"\t\"page\": ${4:0}${5:,\n\t\"collapsed\": true}",
+			"}"
+		],
+		"description": "Use in text entries to embed the referenced data. (Sub)class features need extra properties"
+	},
+	"statblockProp": {
+		"prefix": "statblockProp",
+		"body": [
+			"{",
+			"\t\"type\": \"statblock\",",
+			"\t\"prop\": \"${1|subclass|}\",",
+			"\t\"source\": \"$2\",",
+			"\t\"name\": \"${3:Subclass ShortName}\",",
+			"\t\"className\": \"$4\",",
+			"\t\"classSource\": \"$5\",",
+			"\t\"page\": ${6:0}${7:,\n\t\"collapsed\": true}",
+			"}"
+		],
+		"description": "Use in text entries to embed the referenced subclass"
+	},
+	"ingredientSingle": {
+		"prefix": "ingredientSingle",
+		"body": [
+			"{",
+			"\t\"type\": \"ingredient\",",
+			"\t\"entry\": \"{=amount1/v} $TM_SELECTED_TEXT$1\",",
+			"\t\"amount1\": ${2:Ingredient Quantity}",
+			"}"
+		],
+		"description": "A basic scalable ingredient entry for use in recipes."
+	},
+	"ingredientDouble": {
+		"prefix": "ingredientDouble",
+		"body": [
+			"{",
+			"\t\"type\": \"ingredient\",",
+			"\t\"entry\": \"{=amount1/v} / {=amount2/v} $TM_SELECTED_TEXT$1\",",
+			"\t\"amount1\": ${2:First Ingredient Quantity},",
+			"\t\"amount2\": ${3:Second Ingredient Quantity}",
+			"}"
+		],
+		"description": "A scalable ingredient entry for use in recipes; contains two scalable values typically used for presenting both US conventional and metric units."
+	},
+	"horizontalRule": {
+		"prefix": "horizontalRule",
+		"body": [
+			"{",
+			"\t\"type\": \"hr\"",
+			"}"
+		],
+		"description": "An entry to insert a horizontal ruled line."
+	}
 }

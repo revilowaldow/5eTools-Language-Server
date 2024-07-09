@@ -1,176 +1,176 @@
 {
-    "class": {
-        "prefix": "class",
-        "body": [
-            "{",
-            "\t\"name\": \"$1\",",
-            "\t\"source\": \"$2\",",
-            "\t\"classFeatures\": [",
-            "\t\t$0",
-            "\t],",
-            "\t\"hd\": {",
-            "\t\t\"number\": ${3:0},",
-            "\t\t\"faces\": ${4:0}",
-            "\t},",
-            "\t\"proficiency\": [",
-            "\t\t\"${5|str,dex,con,int,wis,cha|}\",",
-            "\t\t\"${6|str,dex,con,int,wis,cha|}\"",
-            "\t],",
-            "\t\"startingProficiencies\": {",
-            "\t\t\"armor\": [",
-            "\t\t\t\"${7|light,medium,heavy,{@item shield\\|phb\\|shields}|}\"",
-            "\t\t],",
-            "\t\t\"weapons\": [",
-            "\t\t\t\"${8:simple and martial are rendered as x weapons, but you can write any string that you want.}\"",
-            "\t\t],",
-            "\t\t\"tools\": [",
-            "\t\t\t\"${9:Name of any tool or artisan tools}\"",
-            "\t\t],",
-            "\t\t\"skills\": [",
-            "\t\t\t{",
-            "\t\t\t\t\"${10:skillName}\": true",
-            "\t\t\t}",
-            "\t\t]",
-            "\t},",
-            "\t\"startingEquipment\": {",
-            "\t\t\"default\": [",
-            "\t\t\t\"${11:Each string will appear as a list entry}\"",
-            "\t\t],",
-            "\t\t\"additionalFromBackground\": true,",
-            "\t\t\"goldAlternative\": \"{@dice ${12:xdy}}\"",
-            "\t},",
-            "\t\"multiclassing\": {",
-            "\t\t\"requirements\": {",
-            "\t\t\t\t\"${13|str,dex,con,int,wis,cha|}\": ${14:0}",
-            "\t\t\t},",
-            "\t\t\"proficienciesGained\": {",
-            "\t\t\t\"armor\": [",
-            "\t\t\t\t\"\"",
-            "\t\t\t],",
-            "\t\t\t\"weapons\": [",
-            "\t\t\t\t\"\"",
-            "\t\t\t],",
-            "\t\t\t\"tools\": [",
-            "\t\t\t\t\"\"",
-            "\t\t\t],",
-            "\t\t\t\"skills\": [",
-            "\t\t\t\t\"\"",
-            "\t\t\t]",
-            "\t\t}",
-            "\t},",
-            "\t\"casterProgression\": \"${15|full,1/2,1/3,pact|}\",",
-            "\t\"spellcastingAbility\": \"${16|str,dex,con,int,wis,cha|}\",",
-            "\t\"classSpells\": [",
-            "\t\t\"$17\"",
-            "\t],",
-            "\t\"fluff\": [",
-            "\t\t${18}",
-            "\t]",
-            "}"
-        ],
-        "description": "Full class skeleton, many of the fields do not always apply so delete those that are unused."
-    },
-    "classFeature": {
-        "prefix": "classFeature",
-        "body": [
-            "{",
-            "\t\"name\": \"$1\",",
-            "\t\"source\": \"$2\",",
-            "\t\"className\": \"$3\",",
-            "\t\"classSource\": \"$4\",",
-            "\t\"page\": ${5:0},",
-            "\t\"level\": ${6:0},",
-            "\t\"entries\": [",
-            "\t\t\"$7\"",
-            "\t]",
-            "}"
-        ],
-        "description": "Skeleton of class feature"
-    },
-    "classFeatureRef": {
-        "prefix": "classFeatureRef",
-        "body": [
-            "\"${1:<name>}|${2:<className>}|${3:<classSource>}|${4:<featureLevel>}|${5:<featureSource>}\""
-        ],
-        "description": "Reference a class feature inside a class"
-    },
-    "refClassFeature": {
-        "prefix": "refClassFeature",
-        "body": [
-            "{",
-            "\t\"type\": \"refClassFeature\",",
-            "\t\"classFeature\": \"${1:<name>}|${2:<className>}|${3:<classSource>}|${4:<featureLevel>}|${5:<featureSource>}\"",
-            "}"
-        ],
-        "description": "Reference a class feature in the entries of another feature"
-    },
-    "subclass": {
-        "prefix": "subclass",
-        "body": [
-            "{",
-            "\t\"name\": \"$1\",",
-            "\t\"source\": \"$2\",",
-            "\t\"page\": ${3:0},",
-            "\t\"className\": \"$4\",",
-            "\t\"classSource\": \"$5\",",
-            "\t\"shortName\": \"$6\",",
-            "\t\"subclassFeatures\": [",
-            "\t\t$0",
-            "\t],",
-            "\t\"casterProgression\": \"${15|full,1/2,1/3,pact|}\",",
-            "\t\"spellcastingAbility\": \"${16|str,dex,con,int,wis,cha|}\",",
-            "\t\"subclassSpells\": [",
-            "\t\t\"$17\"",
-            "\t]",
-            "}"
-        ],
-        "description": "Full subclass skeleton, delete the parts that don't apply to your case"
-    },
-    "subclassFeature": {
-        "prefix": "subclassFeature",
-        "body": [
-            "{",
-            "\t\"name\": \"$1\",",
-            "\t\"source\": \"$2\",",
-            "\t\"className\": \"$3\",",
-            "\t\"classSource\": \"$4\",",
-            "\t\"page\": ${5:0},",
-            "\t\"subclassShortName\": \"$6\",",
-            "\t\"subclassSource\": \"$7\",",
-            "\t\"level\": ${8:0},",
-            "\t\"header\": ${9:2},",
-            "\t\"entries\": [",
-            "\t\t\"$10\"",
-            "\t]",
-            "}"
-        ],
-        "description": "Skeleton of subclass feature"
-    },
-    "subclassFeatureRef": {
-        "prefix": "subclassFeatureRef",
-        "body": [
-            "\"${1:<name>}|${2:<className>}|${3:<classSource>}|${4:<subclassShortName>}|${5:<subclassSource>}|${6:<featureLevel>}|${7:<featureSource>}\""
-        ],
-        "description": "Reference a subclass feature inside a subclass"
-    },
-    "refSubclassFeature": {
-        "prefix": "refSubclassFeature",
-        "body": [
-            "{",
-            "\t\"type\": \"refSubclassFeature\",",
-            "\t\"subclassFeature\": \"${1:<name>}|${2:<className>}|${3:<classSource>}|${4:<subclassShortName>}|${5:<subclassSource>}|${6:<featureLevel>}|${7:<featureSource>}\"",
-            "}"
-        ],
-        "description": "Reference a subclass feature in the entries of another feature"
-    },
-    "refOptionalfeature": {
-        "prefix": "refOptionalfeature",
-        "body": [
-            "{",
-            "\t\"type\": \"refOptionalfeature\",",
-            "\t\"optionalfeature\": \"${1:<name>}|${2:<featureSource>}\"",
-            "}"
-        ],
-        "description": "Reference an optional feature in the entries of a (sub)class feature"
-    }
+	"class": {
+		"prefix": "class",
+		"body": [
+			"{",
+			"\t\"name\": \"$1\",",
+			"\t\"source\": \"$2\",",
+			"\t\"classFeatures\": [",
+			"\t\t$0",
+			"\t],",
+			"\t\"hd\": {",
+			"\t\t\"number\": ${3:0},",
+			"\t\t\"faces\": ${4:0}",
+			"\t},",
+			"\t\"proficiency\": [",
+			"\t\t\"${5|str,dex,con,int,wis,cha|}\",",
+			"\t\t\"${6|str,dex,con,int,wis,cha|}\"",
+			"\t],",
+			"\t\"startingProficiencies\": {",
+			"\t\t\"armor\": [",
+			"\t\t\t\"${7|light,medium,heavy,{@item shield\\|phb\\|shields}|}\"",
+			"\t\t],",
+			"\t\t\"weapons\": [",
+			"\t\t\t\"${8:simple and martial are rendered as x weapons, but you can write any string that you want.}\"",
+			"\t\t],",
+			"\t\t\"tools\": [",
+			"\t\t\t\"${9:Name of any tool or artisan tools}\"",
+			"\t\t],",
+			"\t\t\"skills\": [",
+			"\t\t\t{",
+			"\t\t\t\t\"${10:skillName}\": true",
+			"\t\t\t}",
+			"\t\t]",
+			"\t},",
+			"\t\"startingEquipment\": {",
+			"\t\t\"default\": [",
+			"\t\t\t\"${11:Each string will appear as a list entry}\"",
+			"\t\t],",
+			"\t\t\"additionalFromBackground\": true,",
+			"\t\t\"goldAlternative\": \"{@dice ${12:xdy}}\"",
+			"\t},",
+			"\t\"multiclassing\": {",
+			"\t\t\"requirements\": {",
+			"\t\t\t\t\"${13|str,dex,con,int,wis,cha|}\": ${14:0}",
+			"\t\t\t},",
+			"\t\t\"proficienciesGained\": {",
+			"\t\t\t\"armor\": [",
+			"\t\t\t\t\"\"",
+			"\t\t\t],",
+			"\t\t\t\"weapons\": [",
+			"\t\t\t\t\"\"",
+			"\t\t\t],",
+			"\t\t\t\"tools\": [",
+			"\t\t\t\t\"\"",
+			"\t\t\t],",
+			"\t\t\t\"skills\": [",
+			"\t\t\t\t\"\"",
+			"\t\t\t]",
+			"\t\t}",
+			"\t},",
+			"\t\"casterProgression\": \"${15|full,1/2,1/3,pact|}\",",
+			"\t\"spellcastingAbility\": \"${16|str,dex,con,int,wis,cha|}\",",
+			"\t\"classSpells\": [",
+			"\t\t\"$17\"",
+			"\t],",
+			"\t\"fluff\": [",
+			"\t\t${18}",
+			"\t]",
+			"}"
+		],
+		"description": "Full class skeleton, many of the fields do not always apply so delete those that are unused."
+	},
+	"classFeature": {
+		"prefix": "classFeature",
+		"body": [
+			"{",
+			"\t\"name\": \"$1\",",
+			"\t\"source\": \"$2\",",
+			"\t\"className\": \"$3\",",
+			"\t\"classSource\": \"$4\",",
+			"\t\"page\": ${5:0},",
+			"\t\"level\": ${6:0},",
+			"\t\"entries\": [",
+			"\t\t\"$7\"",
+			"\t]",
+			"}"
+		],
+		"description": "Skeleton of class feature"
+	},
+	"classFeatureRef": {
+		"prefix": "classFeatureRef",
+		"body": [
+			"\"${1:<name>}|${2:<className>}|${3:<classSource>}|${4:<featureLevel>}|${5:<featureSource>}\""
+		],
+		"description": "Reference a class feature inside a class"
+	},
+	"refClassFeature": {
+		"prefix": "refClassFeature",
+		"body": [
+			"{",
+			"\t\"type\": \"refClassFeature\",",
+			"\t\"classFeature\": \"${1:<name>}|${2:<className>}|${3:<classSource>}|${4:<featureLevel>}|${5:<featureSource>}\"",
+			"}"
+		],
+		"description": "Reference a class feature in the entries of another feature"
+	},
+	"subclass": {
+		"prefix": "subclass",
+		"body": [
+			"{",
+			"\t\"name\": \"$1\",",
+			"\t\"source\": \"$2\",",
+			"\t\"page\": ${3:0},",
+			"\t\"className\": \"$4\",",
+			"\t\"classSource\": \"$5\",",
+			"\t\"shortName\": \"$6\",",
+			"\t\"subclassFeatures\": [",
+			"\t\t$0",
+			"\t],",
+			"\t\"casterProgression\": \"${15|full,1/2,1/3,pact|}\",",
+			"\t\"spellcastingAbility\": \"${16|str,dex,con,int,wis,cha|}\",",
+			"\t\"subclassSpells\": [",
+			"\t\t\"$17\"",
+			"\t]",
+			"}"
+		],
+		"description": "Full subclass skeleton, delete the parts that don't apply to your case"
+	},
+	"subclassFeature": {
+		"prefix": "subclassFeature",
+		"body": [
+			"{",
+			"\t\"name\": \"$1\",",
+			"\t\"source\": \"$2\",",
+			"\t\"className\": \"$3\",",
+			"\t\"classSource\": \"$4\",",
+			"\t\"page\": ${5:0},",
+			"\t\"subclassShortName\": \"$6\",",
+			"\t\"subclassSource\": \"$7\",",
+			"\t\"level\": ${8:0},",
+			"\t\"header\": ${9:2},",
+			"\t\"entries\": [",
+			"\t\t\"$10\"",
+			"\t]",
+			"}"
+		],
+		"description": "Skeleton of subclass feature"
+	},
+	"subclassFeatureRef": {
+		"prefix": "subclassFeatureRef",
+		"body": [
+			"\"${1:<name>}|${2:<className>}|${3:<classSource>}|${4:<subclassShortName>}|${5:<subclassSource>}|${6:<featureLevel>}|${7:<featureSource>}\""
+		],
+		"description": "Reference a subclass feature inside a subclass"
+	},
+	"refSubclassFeature": {
+		"prefix": "refSubclassFeature",
+		"body": [
+			"{",
+			"\t\"type\": \"refSubclassFeature\",",
+			"\t\"subclassFeature\": \"${1:<name>}|${2:<className>}|${3:<classSource>}|${4:<subclassShortName>}|${5:<subclassSource>}|${6:<featureLevel>}|${7:<featureSource>}\"",
+			"}"
+		],
+		"description": "Reference a subclass feature in the entries of another feature"
+	},
+	"refOptionalfeature": {
+		"prefix": "refOptionalfeature",
+		"body": [
+			"{",
+			"\t\"type\": \"refOptionalfeature\",",
+			"\t\"optionalfeature\": \"${1:<name>}|${2:<featureSource>}\"",
+			"}"
+		],
+		"description": "Reference an optional feature in the entries of a (sub)class feature"
+	}
 }
