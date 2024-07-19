@@ -71,8 +71,8 @@
 		"body": [
 			"{",
 			"\t\"type\": \"inset\",",
-			"\t\"page\": ${1:0},",
-			"\t\"name\": \"$2\",",
+			"\t\"name\": \"$1\",",
+			"\t\"page\": ${2:0},",
 			"\t\"entries\": [",
 			"\t\t\"$TM_SELECTED_TEXT$3\"",
 			"\t]",
@@ -85,8 +85,8 @@
 		"body": [
 			"{",
 			"\t\"type\": \"insetReadaloud\",",
-			"\t\"page\": ${1:0},",
-			"\t\"name\": \"$2\",",
+			"\t\"name\": \"$1\",",
+			"\t\"page\": ${2:0},",
 			"\t\"entries\": [",
 			"\t\t\"$TM_SELECTED_TEXT$3\"",
 			"\t]",
