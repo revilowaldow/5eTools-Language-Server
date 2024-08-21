@@ -283,6 +283,45 @@
 		],
 		"description": "Feat block"
 	},
+	"foundryAdvancementScaleValue": {
+		"prefix": "scaleValue",
+		"body": [
+			"{",
+			"\t\"type\": \"ScaleValue\",",
+			"\t\"configuration\": {",
+			"\t\t\"identifier\": \"${2:name-of-thing}\",",
+			"\t\t\"type\": \"number\",",
+			"\t\t\"scale\": {",
+			"\t\t\t\"${3:1}\": {",
+			"\t\t\t\t\"value\": ${4:1}",
+			"\t\t\t}",
+			"\t\t}",
+			"\t},",
+			"\t\"title\": \"${1:Name of Thing}\"",
+			"}"
+		],
+		"description": "Scalar value by level for foundry advancement"
+	},
+	"foundryAdvancementScaleDice": {
+		"prefix": "scaleDice",
+		"body": [
+			"{",
+			"\t\"type\": \"ScaleValue\",",
+			"\t\"configuration\": {",
+			"\t\t\"identifier\": \"${2:name-of-thing}\",",
+			"\t\t\"type\": \"dice\",",
+			"\t\t\"scale\": {",
+			"\t\t\t\"${3:1}\": {",
+			"\t\t\t\t\"n\": ${4:1},",
+			"\t\t\t\t\"die\": ${5:6}",
+			"\t\t\t}",
+			"\t\t}",
+			"\t},",
+			"\t\"title\": \"${1:Name of Thing}\"",
+			"}"
+		],
+		"description": "Scalar dice by level for foundry advancement"
+	},
 	"hazard": {
 		"prefix": "hazard",
 		"body": [
