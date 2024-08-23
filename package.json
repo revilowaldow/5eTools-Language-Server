@@ -83,6 +83,10 @@
 			{
 				"language": "json",
 				"path": "./snippets/tags.json"
+			},
+			{
+				"language": "json",
+				"path": "./snippets/foundry.json"
 			}
 		]
 	},
