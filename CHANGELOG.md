@@ -2,6 +2,9 @@
 
 This project tries to adhere to [Semantic Versioning](https://semver.org/)
 
+## [0.1.31]
+- Add `scale dice` amd `scale number` FoundryVTT snippets (Thanks @Billiam9420 )
+
 ## [0.1.30]
 - Add `adventure`, `book`, `adventureData`, `bookData` and `citation` content snippets (Thanks @Billiam9420 )
 - Add `@citation` tag  (Thanks @Billiam9420 )
