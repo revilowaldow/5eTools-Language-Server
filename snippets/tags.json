@@ -200,14 +200,14 @@
 		"body": [
 			"{@action $TM_SELECTED_TEXT|${1:source}|${2:optional text}}"
 		],
-		"description": "Tags an action. Source is assumed to be PHB"
+		"description": "Tags an action. Source is assumed to be XPHB"
 	},
 	"Background tag": {
 		"prefix": "@background",
 		"body": [
 			"{@background $TM_SELECTED_TEXT|${1:source}|${2:optional text}}"
 		],
-		"description": "Tags a background. Source is assumed to be PHB"
+		"description": "Tags a background. Source is assumed to be XPHB"
 	},
 	"Boon tag": {
 		"prefix": "@boon",
@@ -228,21 +228,21 @@
 		"body": [
 			"{@class $TM_SELECTED_TEXT|${1:source}|${2:optional text}|${3:optional subclass name}|${4:optional subclass source}}"
 		],
-		"description": "Tags a character creation option. Source is assumed to be PHB"
+		"description": "Tags a character creation option. Source is assumed to be XPHB"
 	},
 	"Condition tag": {
 		"prefix": "@condition",
 		"body": [
 			"{@condition $TM_SELECTED_TEXT|${1:source}|${2:optional text}}"
 		],
-		"description": "Tags a condition. Source is assumed to be PHB"
+		"description": "Tags a condition. Source is assumed to be XPHB"
 	},
 	"Status tag": {
 		"prefix": "@status",
 		"body": [
 			"{@status $TM_SELECTED_TEXT|${1:source}|${2:optional text}}"
 		],
-		"description": "Tags a status. Source is assumed to be PHB, the only official status is Concentration."
+		"description": "Tags a status. Source is assumed to be XPHB, the only official status is Concentration."
 	},
 	"Creature tag": {
 		"prefix": "@creature",
@@ -270,7 +270,7 @@
 		"body": [
 			"{@feat $TM_SELECTED_TEXT|${1:source}|${2:optional text}}"
 		],
-		"description": "Tags a feat. Source is assumed to be PHB"
+		"description": "Tags a feat. Source is assumed to be XPHB"
 	},
 	"Hazard tag": {
 		"prefix": "@hazard",
@@ -298,7 +298,7 @@
 		"body": [
 			"{@language $TM_SELECTED_TEXT|${1:source}|${2:optional text}}"
 		],
-		"description": "Tags a language. Source is assumed to be PHB"
+		"description": "Tags a language. Source is assumed to be XPHB"
 	},
 	"Object tag": {
 		"prefix": "@object",
@@ -312,7 +312,7 @@
 		"body": [
 			"{@optfeature $TM_SELECTED_TEXT|${1:source}|${2:optional text}}"
 		],
-		"description": "Tags an invocation or other optional feature. Source is assumed to be PHB"
+		"description": "Tags an invocation or other optional feature. Source is assumed to be XPHB"
 	},
 	"Psionics tag": {
 		"prefix": "@psionic",
@@ -326,7 +326,7 @@
 		"body": [
 			"{@race $TM_SELECTED_TEXT|${1:source}|${2:optional text}}"
 		],
-		"description": "Tags a race. Source is assumed to be PHB"
+		"description": "Tags a race. Source is assumed to be XPHB"
 	},
 	"Recipe tag": {
 		"prefix": "@recipe",
@@ -361,7 +361,7 @@
 		"body": [
 			"{@spell $TM_SELECTED_TEXT|${1:source}|${2:optional text}}"
 		],
-		"description": "Tags a spell. Source is assumed to be PHB"
+		"description": "Tags a spell. Source is assumed to be XPHB"
 	},
 	"Table tag": {
 		"prefix": "@table",
@@ -387,23 +387,23 @@
 	"Deity tag": {
 		"prefix": "@deity",
 		"body": [
-			"{@deity $TM_SELECTED_TEXT|${1:pantheon: Faerûnian}|${2:source}|${3:optional text}}"
+			"{@deity $TM_SELECTED_TEXT|${1:pantheon:Faerûnian}|${2:source}|${3:optional text}}"
 		],
-		"description": "Tags a variant rule. Source is assumed to be PHB, Faerûnian pantheon"
+		"description": "Tags a deity. Source is assumed to be XPHB, Faerûnian pantheon"
 	},
 	"Class Feature tag": {
 		"prefix": "@classFeature",
 		"body": [
 			"{@classFeature $TM_SELECTED_TEXT|${1:class}|${2:class source}|${3:level}|${4:feature source}|${5:optional text}}"
 		],
-		"description": "Tags a class feature. Class source is assumed to be PHB, feature source is assumed to be the same as class source"
+		"description": "Tags a class feature. Class source is assumed to be XPHB, feature source is assumed to be the same as class source"
 	},
 	"Subclass Feature tag": {
 		"prefix": "@subclassFeature",
 		"body": [
 			"{@subclassFeature $TM_SELECTED_TEXT|${1:class}|${2:class source}|${3:subclass}|${4:subclass source}|${5:level}|${6:feature source}|${7:optional text}}"
 		],
-		"description": "Tags a subclass feature. Class and subclass source are assumed to be PHB, feature source is assumed to be the same as subclass source"
+		"description": "Tags a subclass feature. Class and subclass source are assumed to be XPHB, feature source is assumed to be the same as subclass source"
 	},
 	"Homebrew tag": {
 		"prefix": "@homebrew",
