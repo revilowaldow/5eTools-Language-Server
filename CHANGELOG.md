@@ -2,6 +2,11 @@
 
 This project tries to adhere to [Semantic Versioning](https://semver.org/)
 
+## [0.2.0]
+- Update tags and sources for 2024 rules
+- Add 2024 tag snippets: `initiative`, `itemProperty`, `atkr`, `actSave`, `actSaveSuccess`, `actSaveFail`, `actTrigger`, & `actResponse`
+- Adjusted documentation on default tag source assumptions
+
 ## [0.1.31]
 - Add `scale dice` amd `scale number` FoundryVTT snippets (Thanks @Billiam9420 )
 
