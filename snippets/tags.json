@@ -90,6 +90,13 @@
 		],
 		"description": "Rolls for damage, with an XdY format (can use arithmetic operators)"
 	},
+	"Initiative Roll": {
+		"prefix": "@initiative",
+		"body": [
+			"{@initiative $TM_SELECTED_TEXT}"
+		],
+		"description": "Rolls for Initiative, with an XdY format (can use arithmetic operators)"
+	},
 	"Scaled Damage Roll": {
 		"prefix": "@scaledamage",
 		"body": [
@@ -279,6 +286,13 @@
 		],
 		"description": "Tags an item. Source is assumed to be DMG"
 	},
+	"Item Property tag": {
+		"prefix": "@itemProperty",
+		"body": [
+			"{@itemProperty ${2:property abbreviation}|${1:source}|$TM_SELECTED_TEXT}"
+		],
+		"description": "Tags an itemProperty. Source is assumed to be XPHB. You must provide the abbreviation of the property."
+	},
 	"Language tag": {
 		"prefix": "@language",
 		"body": [
@@ -425,6 +439,48 @@
 			"{@atk ${1|m,r,mw,rw,ms,rs,a,aw|}}"
 		],
 		"description": "Bestiary 'attack' tags: Melee Attack:, Ranged Attack:, Melee or Ranged Attack:, Melee Weapon Attack:, Ranged Weapon Attack:, Melee Spell Attack:, Ranged Spell Attack:; (homebrew only) Area Attack:, Area Weapon Attack. These can be combined with commas."
+	},
+	"Attack Roll tag": {
+		"prefix": "@atkr",
+		"body": [
+			"{@atkr ${1|m,r,mw,rw,ms,rs,a,aw|}}"
+		],
+		"description": "Bestiary 'attack' tags which are followed by \"Roll\": Melee Attack Roll:, Ranged Attack Roll:, Melee or Ranged Attack Roll:, Melee Weapon Attack Roll:, Ranged Weapon Attack Roll:, Melee Spell Attack Roll:, Ranged Spell Attack Roll:; (homebrew only) Area Attack Roll:, Area Weapon Attack Roll. These can be combined with commas."
+	},
+	"Save tag": {
+		"prefix": "@actSave",
+		"body": [
+			"{@actSave $TM_SELECTED_TEXT}"
+		],
+		"description": "Renders as \"text Saving Throw:\""
+	},
+	"Success tag": {
+		"prefix": "@actSaveSuccess",
+		"body": [
+			"{@actSaveSuccess}"
+		],
+		"description": "Renders as \"Success:\""
+	},
+	"Failure tag": {
+		"prefix": "@actSaveFail",
+		"body": [
+			"{@actSaveFail}"
+		],
+		"description": "Renders as \"Failure:\""
+	},
+	"Trigger tag": {
+		"prefix": "@actTrigger",
+		"body": [
+			"{@actTrigger}"
+		],
+		"description": "Renders as \"Trigger:\""
+	},
+	"Response tag": {
+		"prefix": "@actResponse",
+		"body": [
+			"{@actResponse}"
+		],
+		"description": "Renders as \"Response:\""
 	},
 	"Quick Reference tag": {
 		"prefix": "@quickref",
