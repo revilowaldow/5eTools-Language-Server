@@ -2,6 +2,14 @@
 
 This project tries to adhere to [Semantic Versioning](https://semver.org/)
 
+## [0.2.1]
+- Update `_meta` snippet to include new required `edition` key
+- Update sources to include `UtHftLH`, `XScreen`, `PaF`, and `HFDoMM`
+- Update tag keywords to include `subclass`
+- Add `subclass` tag snippet
+- Add `itemProperty` `statblock` entry snippet
+- Fix list of `statblock` tags to include `deck`, `itemMastery`, and `object`
+
 ## [0.2.0]
 - Update tags and sources for 2024 rules
 - Add 2024 tag snippets: `initiative`, `itemProperty`, `atkr`, `actSave`, `actSaveSuccess`, `actSaveFail`, `actTrigger`, & `actResponse`
