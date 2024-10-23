@@ -230,6 +230,13 @@
 		],
 		"description": "Tags a character creation option. Source is assumed to be XPHB"
 	},
+	"Subclass tag": {
+		"prefix": "@subclass",
+		"body": [
+			"{@subclass $TM_SELECTED_TEXT|${1:class}|${2:subclass source}|${3:class source}|${4:optional text}}"
+		],
+		"description": "Tags a character creation option. Source is assumed to be PHB"
+	},
 	"Condition tag": {
 		"prefix": "@condition",
 		"body": [
