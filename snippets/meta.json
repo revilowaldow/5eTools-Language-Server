@@ -20,7 +20,8 @@
 			"\t\t\t\"dateReleased\": \"${9:yyyy-mm-dd}\"",
 			"\t\t}",
 			"\t],",
-			"\t\"status\": \"${10|wip,deprecated,ready,invalid|}\",",
+			"\t\"edition\": \"${10|classic,one|}\",",
+			"\t\"status\": \"${11|wip,deprecated,ready,invalid|}\",",
 			"\t\"dateAdded\": $CURRENT_SECONDS_UNIX,",
 			"\t\"dateLastModified\": $CURRENT_SECONDS_UNIX",
 			"}"
