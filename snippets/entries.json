@@ -245,13 +245,13 @@
 		"body": [
 			"{",
 			"\t\"type\": \"statblock\",",
-			"\t\"tag\": \"${1|action,background,boon,charoption,class,classFeature,condition,creature,cult,deity,deck,disease,feat,hazard,item,language,legroup,optfeature,object,psionic,race,recipe,reward,sense,skill,spell,status,subclassFeature,table,trap,variantrule,vehicle,vehupgrade|}\",",
+			"\t\"tag\": \"${1|action,background,boon,charoption,class,classFeature,condition,creature,cult,deck,deity,disease,feat,hazard,item,itemMastery,language,legroup,object,optfeature,psionic,race,recipe,reward,sense,skill,spell,status,subclassFeature,table,trap,variantrule,vehicle,vehupgrade|}\",",
 			"\t\"source\": \"$2\",",
 			"\t\"name\": \"$3\",",
 			"\t\"page\": ${4:0}${5:,\n\t\"collapsed\": true}",
 			"}"
 		],
-		"description": "Use in text entries to embed the referenced data. (Sub)class features need extra properties"
+		"description": "Use in text entries to embed the referenced data. (Sub)class features  need extra properties"
 	},
 	"statblockProp": {
 		"prefix": "statblockProp",
@@ -267,6 +267,19 @@
 			"}"
 		],
 		"description": "Use in text entries to embed the referenced subclass"
+	},
+	"statblockAbbreviation": {
+		"prefix": "statblockAbbreviation",
+		"body": [
+			"{",
+			"\t\"type\": \"statblock\",",
+			"\t\"tag\": \"${1|itemProperty|}\",",
+			"\t\"source\": \"$2\",",
+			"\t\"displayName\": \"${3:Property Name}\",",
+			"\t\"page\": ${4:0}${5:,\n\t\"collapsed\": true}",
+			"}"
+		],
+		"description": "Use in text entries to embed the referenced itemProperty"
 	},
 	"ingredientSingle": {
 		"prefix": "ingredientSingle",
