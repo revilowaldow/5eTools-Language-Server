@@ -2,6 +2,13 @@
 
 This project tries to adhere to [Semantic Versioning](https://semver.org/)
 
+## [0.2.2]
+- Update sources to include `ScoEE`
+- Update tag keywords to include `facility`
+- Added `@facility` tag
+- Added `facility` to dropdown in `statblock` entry
+- Fixed hint text in `@subclass` tag
+
 ## [0.2.1]
 - Update `_meta` snippet to include new required `edition` key
 - Update sources to include `UtHftLH`, `XScreen`, `PaF`, and `HFDoMM`
