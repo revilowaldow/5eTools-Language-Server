@@ -245,7 +245,7 @@
 		"body": [
 			"{",
 			"\t\"type\": \"statblock\",",
-			"\t\"tag\": \"${1|action,background,boon,charoption,class,classFeature,condition,creature,cult,deck,deity,disease,feat,hazard,item,itemMastery,language,legroup,object,optfeature,psionic,race,recipe,reward,sense,skill,spell,status,subclassFeature,table,trap,variantrule,vehicle,vehupgrade|}\",",
+			"\t\"tag\": \"${1|action,background,boon,charoption,class,classFeature,condition,creature,cult,deck,deity,disease,facility,feat,hazard,item,itemMastery,language,legroup,object,optfeature,psionic,race,recipe,reward,sense,skill,spell,status,subclassFeature,table,trap,variantrule,vehicle,vehupgrade|}\",",
 			"\t\"source\": \"$2\",",
 			"\t\"name\": \"$3\",",
 			"\t\"page\": ${4:0}${5:,\n\t\"collapsed\": true}",
