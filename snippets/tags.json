@@ -391,6 +391,13 @@
 		],
 		"description": "Tags a variant rule. Source is assumed to be DMG"
 	},
+	"Facility tag": {
+		"prefix": "@facility",
+		"body": [
+			"{@facility $TM_SELECTED_TEXT|${1:source}|${2:optional text}}"
+		],
+		"description": "Tags a bastion facility. Source is assumed to be XDMG"
+	},
 	"Deity tag": {
 		"prefix": "@deity",
 		"body": [
