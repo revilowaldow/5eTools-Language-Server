@@ -2,6 +2,11 @@
 
 This project tries to adhere to [Semantic Versioning](https://semver.org/)
 
+## [0.2.3]
+- Update sources to add `HBTD`
+- Removed Humblewood sources
+- Updated tags to include `actSaveSuccessOrFail`, and `hom`
+
 ## [0.2.2]
 - Update sources to include `ScoEE`
 - Update tag keywords to include `facility`
