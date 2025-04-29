@@ -249,7 +249,7 @@
 		"body": [
 			"{@status $TM_SELECTED_TEXT|${1:source}|${2:optional text}}"
 		],
-		"description": "Tags a status. Source is assumed to be XPHB, the only official status is Concentration."
+		"description": "Tags a status. Source is assumed to be XPHB; the only official statuses are Concentration and Surprised"
 	},
 	"Creature tag": {
 		"prefix": "@creature",
