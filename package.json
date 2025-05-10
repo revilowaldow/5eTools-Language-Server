@@ -34,6 +34,7 @@
 				"fileMatch": [
 					"*.json",
 					"*.jsonc",
+					"!settings.json",
 					"!package.json",
 					"!package-lock.json",
 					"*.5e"
