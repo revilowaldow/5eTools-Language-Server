@@ -2,6 +2,22 @@
 
 This project tries to adhere to [Semantic Versioning](https://semver.org/)
 
+## [0.2.5]
+
+- Update sources to remove `GHLoE`, `DoDk`, `ToB1-2023`, and include `DrDe`, `DrDe-DaS`, `DrDe-BD`, `DrDe-TWoO`, `DrDe-FWtVC`, `DrDe-TDoN`, `DrDe-TFV`, `DrDe-BtS`, `DrDe-SD`, `DrDe-ACfaS`, `DrDe-DotSC` & `BQGT`
+- Tweak internal language matching for escape characters
+- Reference vscode internal schemas for snippets and language configurations and fixed identified typos
+- The `image` snippet will now suggest the homebrew repo root
+- Removed invalid suggestions from `statblock` entry snippets
+- Fixed `statblockAbbreviation` missing required property
+- Removed devDependency to mitigate security alert
+- Enhanced bracket pair colourisation for 5e language
+- The `$schema` snippet now suggests `githack` to mitigate GitHub rate limiting
+- The `_meta` snippet now suggests the homebrew repo url as the placeholder and adds support for `colorNight`
+- Added `list` `style` option, `list-hang-subtrait`
+- Added new snippet for standalone `table`s, in addition to the existing snippet for `table` entries
+- The `@link`tag snippet now combines selected text and clipboard text as display and address
+
 ## [0.2.4]
 
 - Move live validation schema source to githack to hopefully reduce GitHub 429 errors.
