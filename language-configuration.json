@@ -1,7 +1,5 @@
 {
     "$schema": "vscode://schemas/language-configuration",
-    "comments": {
-    },
     // symbols used as brackets
     "brackets": [
         ["{", "}"],
@@ -19,5 +17,25 @@
         ["(", ")"],
         ["\"", "\""],
         ["'", "'"]
+    ],
+    "colorizedBracketPairs": [
+        [
+            "(",
+            ")"
+        ],
+        [
+            "[",
+            "]"
+        ],
+        [
+            "{",
+            "}"
+        ]
+    ],
+    "colorizedSurroundingPairs": [
+        [
+            "{",
+            "}"
+        ]
     ]
 }
