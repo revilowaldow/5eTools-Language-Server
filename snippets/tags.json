@@ -164,7 +164,7 @@
 	"Link": {
 		"prefix": "@link",
 		"body": [
-			"{@link ${1:optional text}|$TM_SELECTED_TEXT}"
+			"{@link $TM_SELECTED_TEXT|$CLIPBOARD}"
 		],
 		"description": "Converts a url into an external hyperlink, with an optional display text"
 	},
