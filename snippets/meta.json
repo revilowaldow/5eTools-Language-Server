@@ -1,5 +1,4 @@
 {
-	"$schema": "vscode://schemas/snippets",
 	"_meta": {
 		"prefix": "meta",
 		"body": [
@@ -17,12 +16,13 @@
 			"\t\t\t],",
 			"\t\t\t\"version\": \"$6\",",
 			"\t\t\t\"color\": \"${7:ffffff}\",",
-			"\t\t\t\"url\": \"$8\",",
-			"\t\t\t\"dateReleased\": \"${9:yyyy-mm-dd}\"",
+			"\t\t\t\"colorNight\": \"${8:ffffff}\",",
+			"\t\t\t\"url\": \"${9:https://github.com/TheGiddyLimit/homebrew}\",",
+			"\t\t\t\"dateReleased\": \"${10:yyyy-mm-dd}\"",
 			"\t\t}",
 			"\t],",
-			"\t\"edition\": \"${10|classic,one|}\",",
-			"\t\"status\": \"${11|wip,deprecated,ready,invalid|}\",",
+			"\t\"edition\": \"${11|classic,one|}\",",
+			"\t\"status\": \"${12|wip,deprecated,ready,invalid|}\",",
 			"\t\"dateAdded\": $CURRENT_SECONDS_UNIX,",
 			"\t\"dateLastModified\": $CURRENT_SECONDS_UNIX",
 			"}"
