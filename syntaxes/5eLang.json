@@ -18,8 +18,9 @@
 			"end": "(?=\\})",
 			"patterns": [
 				{
-					"match": "(?x)                # turn on extended mode\n  \\\\                # a literal backslash\n  (?:               # ...followed by...\n    [\"\\\\/bfnrt]     # one of these characters\n    |               # ...or...\n    u               # a u\n    [0-9a-fA-F]{4}) # and four hex digits",
-					"name": "constant.character.escape.5e"
+					"match": "\\\\(?:[\"\\\\/bfnrt]|u[0-9a-fA-F]{4})",
+					"name": "constant.character.escape.5e",
+					"comment": "Match a backslash followed by either one of the listed characters, or a u followed by 4 hex digits."
 				},
 				{
 					"include": "#empty"
