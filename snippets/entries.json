@@ -212,7 +212,7 @@
 			"\t]",
 			"}"
 		],
-		"description": "Centered text with the format 'Name  = text + mod', multiple abilities give a choice"
+		"description": "Centered text with the format 'Name = text + mod', multiple abilities give a choice"
 	},
 	"gallery": {
 		"prefix": "gallery",
@@ -233,7 +233,7 @@
 			"\t\"type\": \"image\",",
 			"\t\"href\": {",
 			"\t\t\"type\": \"external\",",
-			"\t\t\"url\": \"$1\"",
+			"\t\t\"url\": \"${1:https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/}\"",
 			"\t},",
 			"\t\"title\": \"${2:Optional Title}\",",
 			"\t\"credit\": \"${3:Optional Artist Credit}\"",
@@ -246,28 +246,28 @@
 		"body": [
 			"{",
 			"\t\"type\": \"statblock\",",
-			"\t\"tag\": \"${1|action,background,boon,charoption,class,classFeature,condition,creature,cult,deck,deity,disease,facility,feat,hazard,item,itemMastery,language,legroup,object,optfeature,psionic,race,recipe,reward,sense,skill,spell,status,subclassFeature,table,trap,variantrule,vehicle,vehupgrade|}\",",
+			"\t\"tag\": \"${1|action,background,boon,charoption,class,classFeature,condition,creature,cult,deck,disease,facility,feat,hazard,item,itemMastery,language,legroup,object,optfeature,psionic,race,recipe,reward,sense,skill,spell,status,subclassFeature,table,trap,variantrule,vehicle,vehupgrade|}\",",
 			"\t\"source\": \"$2\",",
 			"\t\"name\": \"$3\",",
 			"\t\"page\": ${4:0}${5:,\n\t\"collapsed\": true}",
 			"}"
 		],
-		"description": "Use in text entries to embed the referenced data. (Sub)class features  need extra properties"
+		"description": "Use in text entries to embed the referenced data. (Sub)class features need extra properties"
 	},
 	"statblockProp": {
 		"prefix": "statblockProp",
 		"body": [
 			"{",
 			"\t\"type\": \"statblock\",",
-			"\t\"prop\": \"${1|subclass|}\",",
+			"\t\"prop\": \"${1|subclass,monsterFluff|}\",",
 			"\t\"source\": \"$2\",",
-			"\t\"name\": \"${3:Subclass ShortName}\",",
+			"\t\"name\": \"${3:Subclass shortName}\",",
 			"\t\"className\": \"$4\",",
 			"\t\"classSource\": \"$5\",",
 			"\t\"page\": ${6:0}${7:,\n\t\"collapsed\": true}",
 			"}"
 		],
-		"description": "Use in text entries to embed the referenced subclass"
+		"description": "Use in text entries to embed the referenced subclass, or monsterFluff."
 	},
 	"statblockAbbreviation": {
 		"prefix": "statblockAbbreviation",
@@ -276,7 +276,8 @@
 			"\t\"type\": \"statblock\",",
 			"\t\"tag\": \"${1|itemProperty|}\",",
 			"\t\"source\": \"$2\",",
-			"\t\"displayName\": \"${3:Property Name}\",",
+			"\t\"abbreviation\": \"$3\",",
+			"\t\"displayName\": \"${4:Property Name}\",",
 			"\t\"page\": ${4:0}${5:,\n\t\"collapsed\": true}",
 			"}"
 		],
