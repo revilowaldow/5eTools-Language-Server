@@ -17,6 +17,7 @@ This project tries to adhere to [Semantic Versioning](https://semver.org/)
 - Added `list` `style` option, `list-hang-subtrait`
 - Added new snippet for standalone `table`s, in addition to the existing snippet for `table` entries
 - The `@link`tag snippet now combines selected text and clipboard text as display and address
+- Enhance extension build to reduce total extension size by 91%
 
 ## [0.2.4]
 
