@@ -2,6 +2,11 @@
 
 This project tries to adhere to [Semantic Versioning](https://semver.org/)
 
+## [0.2.6]
+- Add `languageGroup` snippet
+- Update sources to include `HotB`, `WttHC`, `FRAiF`, `FRHoF`, `ABH`, `NF`, `LFL`, `EFA`
+- Update tag keywords to include `creatureFluff` & `raceFluff`
+
 ## [0.2.5]
 
 - Update sources to remove `GHLoE`, `DoDk`, `ToB1-2023`, and include `DrDe`, `DrDe-DaS`, `DrDe-BD`, `DrDe-TWoO`, `DrDe-FWtVC`, `DrDe-TDoN`, `DrDe-TFV`, `DrDe-BtS`, `DrDe-SD`, `DrDe-ACfaS`, `DrDe-DotSC` & `BQGT`
