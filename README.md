@@ -1,28 +1,41 @@
 # 5eTools Language Server
 
-Available at both:
-- VSCode: https://marketplace.visualstudio.com/items?itemName=revilowaldow.5etools-language-server
-- VSCo~p~*d*ium: https://open-vsx.org/extension/revilowaldow/5etools-language-server
+Available for:
+- [VSCode](https://marketplace.visualstudio.com/items?itemName=revilowaldow.5etools-language-server)
+- [VSCodium](https://open-vsx.org/extension/revilowaldow/5etools-language-server)
 
-A massive ripoff of [GoR](https://github.com/Git-GoR/5e-homebrew-snippets) and [Tree's](https://github.com/Jklein64/5e-syntax) extensions (both MIT), taking what I believe to be the best of both, and dropping the rest.
+## Key Features
 
-## Notable changes:
+- Schema validation is completed for JSON files, giving:
+  - Instantaneous error feedback
+  - Automated completion of valid 5etools key names and values
+- Syntax highlighting is provided:
+  - For JSON
+  - For 5etools tag syntax `{@item Bag of Holding|DMG}`
+  - Including reserved source IDs and tag keywords
+  - In non-json .5e files, nested-tag bracket-pair colours are supported
+- JSON snippet templates are included:
+  - For generic concepts like entries, images, lists and tables
+  - For data structures like items, feats, races/species, classes, `_meta` and more
+  - For basic and complex tags, including wrapping existing selected text with reference tags
 
-- This extension provides the JSON schema validation directly
-- No more duplicate tags
-- Updated source and tag lists
-- Added more tags
-- Added a $schema snippet
+## Demonstration
 
-## Longer Term Goals
+![Example video](https://raw.githubusercontent.com/revilowaldow/5eTools-Language-Server/main/images/Demo.webp)
 
-- Look into making this user customisable
-  - User specified Homebrew Sources for Highlighting
-  - User specified matching for schema
-- Look into adding direct dependencies on 5e modules, for e.g. automatic source list updating
+## Credits
 
-## Example Features
+This extension is built with code (MIT licensed) taken from extensions previously written by [GoR](https://github.com/Git-GoR/5e-homebrew-snippets) & [Tree](https://github.com/Jklein64/5e-syntax). It supersedes those extensions.
 
-Content autofill/suggestions and error checking from the schema, as well as syntax highlighting for 5eTools style tags.
+Enhancements have been made:
 
-https://user-images.githubusercontent.com/52298102/204143606-e8853cc3-608b-468c-946e-e8fb1f687f25.mp4
+- GoR
+  - Provided fewer snippets, many are now incompatible with the site due to changes in data structures
+- Tree
+  - Provided syntax highlighting, but no longer covers all valid tag keywords and sources
+  - A number of errors were present in escaping nested tag structures
+- Both
+  - Duplicated tags so would bloat snippet picker suggestions with copies
+  - Do not provide suggestions, validation or error checking
+
+Nonetheless their contribution is gratefully recognised.
