@@ -335,7 +335,7 @@
 		],
 		"description": "Language block"
 	},
-	"legendaryGroup Snippet": {
+	"legendaryGroup": {
 		"prefix": "legendaryGroup",
 		"body": [
 			"{",
@@ -476,7 +476,7 @@
 		],
 		"description": "Race block"
 	},
-	"tableEntry": {
+	"table": {
 		"prefix": "tableObject",
 		"body": [
 			"{",
@@ -493,23 +493,23 @@
 			"\t\t\"col-$7 text-\"",
 			"\t],",
 			"\t\"intro\": [",
-			"\t\t\"${7:Optional intro entries.}\"",
+			"\t\t\"${8:Optional intro entries.}\"",
 			"\t],",
 			"\t\"outro\": [",
-			"\t\t\"${8:Optional outro entries.}\"",
+			"\t\t\"${9:Optional outro entries.}\"",
 			"\t],",
 			"\t\"rows\": [",
 			"\t\t[",
-			"\t\t\t\"$9\",",
-			"\t\t\t\"$10\"",
+			"\t\t\t\"$10\",",
+			"\t\t\t\"$11\"",
 			"\t\t],",
 			"\t\t[",
-			"\t\t\t\"$11\",",
-			"\t\t\t\"$12\"",
+			"\t\t\t\"$12\",",
+			"\t\t\t\"$13\"",
 			"\t\t]",
 			"\t],",
 			"\t\"footnotes\": [",
-			"\t\t\"${13:Optional Footer}\"",
+			"\t\t\"${14:Optional Footer}\"",
 			"\t]",
 			"}"
 		],
