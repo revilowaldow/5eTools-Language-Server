@@ -2,6 +2,10 @@
 
 This project tries to adhere to [Semantic Versioning](https://semver.org/)
 
+# [0.2.7]
+- Fix `table` snippet placeholders
+- Overhaul readme
+
 ## [0.2.6]
 - Add `languageGroup` snippet
 - Update sources to include `HotB`, `WttHC`, `FRAiF`, `FRHoF`, `ABH`, `NF`, `LFL`, `EFA`
