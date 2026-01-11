@@ -1,26 +1,23 @@
 {
 	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
 	"name": "5e",
-	"scopeName": "source.5e",
+	"scopeName": "source.json.5e",
 	"injectionSelector": "L:string.quoted.double",
 	"patterns": [
 		{
-			"include": "#asterisks"
+			"include": "#tag"
 		},
 		{
-			"include": "#tag"
+			"include": "#unterminatedTag"
 		}
 	],
 	"repository": {
 		"body": {
-			"contentName": "value.variable.5e",
 			"begin": "\\s",
 			"end": "(?=\\})",
 			"patterns": [
 				{
-					"match": "\\\\(?:[\"\\\\/bfnrt]|u[0-9a-fA-F]{4})",
-					"name": "constant.character.escape.5e",
-					"comment": "Match a backslash followed by either one of the listed characters, or a u followed by 4 hex digits."
+					"include": "#escape"
 				},
 				{
 					"include": "#empty"
@@ -30,7 +27,7 @@
 				},
 				{
 					"comment": "Separator between things",
-					"name": "punctuation.separator.5e",
+					"name": "punctuation.definition.tag.seperator.5e",
 					"match": "\\|"
 				},
 				{
@@ -39,57 +36,88 @@
 					"match": "\\b(PHB|DMG|MM|CoS|EEPC|EET|HotDQ|LMoP|OotA|PotA|RoT|RoTOS|SCAG|SKT|ToA|TLK|ToD|TTP|TftYP|TftYP-AtG|TftYP-DiT|TftYP-TFoF|TftYP-THSoT|TftYP-TSC|TftYP-ToH|TftYP-WPM|VGM|XGE|OGA|MTF|WDH|WDMM|GGR|KKW|LLK|AZfyT|GoS|AI|OoW|ESK|DIP|HftT|DC|SLW|SDW|BGDIA|LR|AL|SAC|ERLW|EFR|RMBRE|RMR|MFF|AWM|IMR|SADS|EGW|ToR|DD|FS|US|MOT|IDRotF|TCE|VRGR|HoL|RtG|AitFR|AitFR-ISF|AitFR-THP|AitFR-AVT|AitFR-DN|AitFR-FCD|WBtW|DoD|MaBJoV|FTD|SCC|SCC-CK|SCC-HfMT|SCC-TMM|SCC-ARiR|MPMM|CRCotN|JttRC|SAiS|AAG|BAM|LoX|DoSI|DSotDQ|KftGV|BGG|TDCSR|PaBTSO|PAitM|SatO|ToFW|MPP|BMT|DMTCRG|QftIS|VEoR|XPHB|XDMG|XMM|DrDe|DrDe-DaS|DrDe-BD|DrDe-TWoO|DrDe-FWtVC|DrDe-TDoN|DrDe-TFV|DrDe-BtS|DrDe-SD|DrDe-ACfaS|DrDe-DotSC|HotB|WttHC|FRAiF|FRHoF|ABH|NF|LFL|EFA|TD|Screen|ScreenWildernessKit|ScreenDungeonKit|ScreenSpelljammer|XScreen|HF|HFFotM|HFStCM|PaF|HFDoMM|CM|NRH|NRH-TCMC|NRH-AVitW|NRH-ASS|NRH-CoI|NRH-TLT|NRH-AWoL|NRH-AT|MGELFT|VD|SjA|HAT-TG|HAT-LMI|GotSF|LK|CoA|PiP|DitLCoT|VNotEE|LRDT|UtHftLH|ScoEE|HBTD|BQGT|ALCurseOfStrahd|ALElementalEvil|ALRageOfDemons|PSA|PSI|PSK|PSZ|PSX|PSD|XMtS|UATheMysticClass|MCV1SC|MCV2DC|MCV3MC|MCV4EC|MisMV1|AATM)\\b"
 				},
 				{
-					"comment": "Last entry, for aliases.  More of a catch-all case.",
-					"name": "string.5e",
-					"match": "(?<=\\|)[^|}]+(?=\\})"
+					"comment": "Last entry, for aliases. More of a catch-all case.",
+					"patterns": [
+						{
+							"name": "string.tag.5e",
+							"match": "(?<=\\|)[^|}\\\\]+(?=\\})"
+						},
+						{
+							"include": "#escape"
+						}
+					]
 				},
 				{
 					"comment": "Make all but first (and last) yellow.",
-					"name": "value.variable.rest.5e",
-					"match": "(?<=\\|)[^|}]+(?=\\|)"
+					"patterns": [
+						{
+							"name": "support.function.name.5e",
+							"match": "(?<=\\|)[^|}\\\\]+(?=\\|)"
+						},
+						{
+							"include": "#escape"
+						}
+					]
 				}
 			]
 		},
 		"tag": {
-			"name": "meta.structure.tag.5e",
-			"begin": "\\{(?=@)",
+			"begin": "\\{(?=@[^}]*\\})",
 			"end": "\\}",
 			"beginCaptures": {
 				"0": {
-					"name": "punctuation.brace.open.5e"
+					"name": "punctuation.definition.tag.brace.open.5e"
 				}
 			},
 			"endCaptures": {
 				"0": {
-					"name": "punctuation.brace.close.5e"
+					"name": "punctuation.definition.tag.brace.close.5e"
 				}
 			},
 			"patterns": [
 				{
-					"include": "#body"
-				},
-				{
 					"comment": "Pull keywords from site: `Renderer.tag.TAGS.map(tag => tag.tagName).join(\"|\")`",
-					"name": "keyword.language.5e",
+					"name": "keyword.operator.tag.5e",
 					"match": "@(b|bold|i|italic|s|strike|s2|strikeDouble|u|underline|u2|underlineDouble|sup|sub|kbd|code|style|font|comic|comicH1|comicH2|comicH3|comicH4|comicNote|note|tip|unit|actSave|actSaveSuccess|actSaveFail|actSaveFailBy|actSaveSuccessOrFail|actTrigger|actResponse|h|m|hom|atk|atkr|hitYourSpellAttack|dc|dcYourSpellSave|chance|d20|damage|dice|autodice|hit|initiative|recharge|ability|savingThrow|skillCheck|scaledice|scaledamage|coinflip|5etools|5etoolsImg|adventure|book|filter|footnote|link|loader|color|highlight|help|quickref|area|action|background|boon|charoption|class|condition|creature|creatureFluff|cult|deck|disease|facility|feat|hazard|item|itemProperty|itemMastery|language|legroup|object|optfeature|psionic|race|raceFluff|recipe|reward|vehicle|vehupgrade|sense|skill|spell|status|table|trap|variantrule|cite|card|deity|subclass|classFeature|subclassFeature|homebrew|itemEntry)\\b",
 					"captures": {
 						"1": {
-							"name": "keyword.language.symbol.5e"
+							"name": "keyword.operator.prop.5e"
 						},
 						"2": {
-							"name": "keyword.language.name.5e"
+							"name": "keyword.operator.name.5e"
 						}
 					}
 				},
 				{
-					"name": "string.5e",
-					"match": "(\\b|@)([\\w\\d]+)\\b"
+					"comment": "Negative lookahead around last list",
+					"name": "invalid.illegal.tag.5e",
+					"match": "@(?!(b|bold|i|italic|s|strike|s2|strikeDouble|u|underline|u2|underlineDouble|sup|sub|kbd|code|style|font|comic|comicH1|comicH2|comicH3|comicH4|comicNote|note|tip|unit|actSave|actSaveSuccess|actSaveFail|actSaveFailBy|actSaveSuccessOrFail|actTrigger|actResponse|h|m|hom|atk|atkr|hitYourSpellAttack|dc|dcYourSpellSave|chance|d20|damage|dice|autodice|hit|initiative|recharge|ability|savingThrow|skillCheck|scaledice|scaledamage|coinflip|5etools|5etoolsImg|adventure|book|filter|footnote|link|loader|color|highlight|help|quickref|area|action|background|boon|charoption|class|condition|creature|creatureFluff|cult|deck|disease|facility|feat|hazard|item|itemProperty|itemMastery|language|legroup|object|optfeature|psionic|race|raceFluff|recipe|reward|vehicle|vehupgrade|sense|skill|spell|status|table|trap|variantrule|cite|card|deity|subclass|classFeature|subclassFeature|homebrew|itemEntry))([A-Za-z0-9_]+)\\b",
+					"captures": {
+						"1": {
+							"name": "invalid.illegal.prop.5e"
+						},
+						"2": {
+							"name": "invalid.illegal.name.5e"
+						}
+					}
+				},
+				{
+					"include": "#body"
 				}
 			]
 		},
-		"asterisks": {
-			"name": "keyword.asterisk.5e",
-			"match": "(?<=\\})([*]+)"
+		"unterminatedTag": {
+			"begin": "\\{(?=@)",
+			"end": "\\}|(?=\\\")",
+			"patterns": [
+				{
+					"include": "#tag"
+				},
+				{
+					"match": ".+",
+					"name": "invalid.illegal.unterminatedTag.5e"
+				}
+			]
 		},
 		"empty": {
 			"begin": "\\{(?!=@)",
@@ -100,6 +128,19 @@
 				},
 				{
 					"include": "#empty"
+				}
+			]
+		},
+		"escape": {
+			"patterns": [
+				{
+					"match": "\\\\(?:[\"\\\\/bfnrt]|u[0-9a-fA-F]{4})",
+					"name": "constant.character.escape.5e",
+					"comment": "JSON escapes: Match a backslash followed by either one of the listed characters, or a u followed by 4 hex digits."
+				},
+				{
+					"match": "\\\\.",
+					"name": "invalid.illegal.escape.5e"
 				}
 			]
 		}

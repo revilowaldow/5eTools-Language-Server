@@ -56,7 +56,7 @@
 		],
 		"grammars": [
 			{
-				"scopeName": "source.5e",
+				"scopeName": "source.json.5e",
 				"path": "./syntaxes/5eLang.json",
 				"language": "5etools",
 				"injectTo": [
