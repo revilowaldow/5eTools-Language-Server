@@ -343,12 +343,12 @@
 		],
 		"description": "Tags a recipe. Source is assumed to be HF (Heroes' Feast)"
 	},
-	"Pattern tag": {
-		"prefix": "@pattern",
+	"Crochet Pattern tag": {
+		"prefix": "@crochetPattern",
 		"body": [
-			"{@pattern $TM_SELECTED_TEXT|${1:source}|${2:optional text}}"
+			"{@crochetPattern $TM_SELECTED_TEXT|${1:source}|${2:optional text}}"
 		],
-		"description": "Tags a pattern. Source is assumed to be CaBoMP (Crochet: A Book of Many Patterns)"
+		"description": "Tags a crochet pattern. Source is assumed to be CaBoMP (Crochet: A Book of Many Patterns)"
 	},
 	"Reward tag": {
 		"prefix": "@reward",
