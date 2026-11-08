@@ -4,7 +4,7 @@
 	"description": "Adds syntax highlighting, snippets, and schemas for 5eTools data files",
 	"version": "0.2.8",
 	"publisher": "revilowaldow",
-	"icon": "images/5eUA.png",
+	"icon": "images/5eUA-1024.png",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/revilowaldow/5eTools-Language-Server.git"
