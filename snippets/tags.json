@@ -229,14 +229,28 @@
 		"body": [
 			"{@class $TM_SELECTED_TEXT|${1:source}|${2:optional text}|${3:optional subclass name}|${4:optional subclass source}}"
 		],
-		"description": "Tags a character creation option. Source is assumed to be XPHB"
+		"description": "Tags a class. Source is assumed to be XPHB"
+	},
+	"Class Fluff tag": {
+		"prefix": "@classFluff",
+		"body": [
+			"{@classFluff $TM_SELECTED_TEXT|${1:source}|${2:optional text}}"
+		],
+		"description": "Tags class fluff text. Source is assumed to be XPHB"
 	},
 	"Subclass tag": {
 		"prefix": "@subclass",
 		"body": [
 			"{@subclass $TM_SELECTED_TEXT|${1:class}|${2:class source}|${3:subclass source}|${4:optional text}}"
 		],
-		"description": "Tags a character creation option. Source is assumed to be PHB"
+		"description": "Tags a subclass. Sources are assumed to be XPHB"
+	},
+	"Subclass Fluff tag": {
+		"prefix": "@subclassFluff",
+		"body": [
+			"{@subclassFluff $TM_SELECTED_TEXT|${1:class}|${2:class source}|${3:subclass source}|${4:optional text}}"
+		],
+		"description": "Tags subclass fluff text. Source is assumed to be XPHB"
 	},
 	"Condition tag": {
 		"prefix": "@condition",
@@ -294,6 +308,13 @@
 		],
 		"description": "Tags an item. Source is assumed to be DMG"
 	},
+	"Item Fluff tag": {
+		"prefix": "@itemFluff",
+		"body": [
+			"{@itemFluff $TM_SELECTED_TEXT|${1:source}|${2:optional text}}"
+		],
+		"description": "Tags item fluff text. Source is assumed to be DMG"
+	},
 	"Item Property tag": {
 		"prefix": "@itemProperty",
 		"body": [
@@ -343,12 +364,26 @@
 		],
 		"description": "Tags a recipe. Source is assumed to be HF (Heroes' Feast)"
 	},
-	"Crochet Pattern tag": {
-		"prefix": "@crochetPattern",
+	"Recipe Fluff tag": {
+		"prefix": "@recipeFluff",
 		"body": [
-			"{@crochetPattern $TM_SELECTED_TEXT|${1:source}|${2:optional text}}"
+			"{@recipeFluff $TM_SELECTED_TEXT|${1:source}|${2:optional text}}"
+		],
+		"description": "Tags recipe fluff text. Source is assumed to be HF (Heroes' Feast)"
+	},
+	"Crochet Pattern tag": {
+		"prefix": "@crochet",
+		"body": [
+			"{@crochet $TM_SELECTED_TEXT|${1:source}|${2:optional text}}"
 		],
 		"description": "Tags a crochet pattern. Source is assumed to be CaBoMP (Crochet: A Book of Many Patterns)"
+	},
+	"Crochet Pattern Fluff tag": {
+		"prefix": "@crochetFluff",
+		"body": [
+			"{@crochetFluff $TM_SELECTED_TEXT|${1:source}|${2:optional text}}"
+		],
+		"description": "Tags crochet pattern fluff text. Source is assumed to be CaBoMP (Crochet: A Book of Many Patterns)"
 	},
 	"Reward tag": {
 		"prefix": "@reward",
@@ -377,6 +412,13 @@
 			"{@spell $TM_SELECTED_TEXT|${1:source}|${2:optional text}}"
 		],
 		"description": "Tags a spell. Source is assumed to be XPHB"
+	},
+	"Spell Fluff tag": {
+		"prefix": "@spellFluff",
+		"body": [
+			"{@spellFluff $TM_SELECTED_TEXT|${1:source}|${2:optional text}}"
+		],
+		"description": "Tags spell fluff text. Source is assumed to be PHB"
 	},
 	"Table tag": {
 		"prefix": "@table",
@@ -441,12 +483,19 @@
 		],
 		"description": "Links within the same base site url, use for links to the site"
 	},
-	"5eTools Media/Image tag": {
+	"5eTools Image tag": {
 		"prefix": "@5etoolsImg",
 		"body": [
 			"{@5etoolsImg $TM_SELECTED_TEXT|${1:page link}}"
 		],
-		"description": "Links to 5etools media files, compensating for local and remote pdf and img directories."
+		"description": "Links to 5etools image files, compensating for local and remote pdf and img directories."
+	},
+	"5eTools Audio tag": {
+		"prefix": "@5etoolsAudio",
+		"body": [
+			"{@5etoolsAudio $TM_SELECTED_TEXT|${1:page link}}"
+		],
+		"description": "Links to 5etools audio files (typically .opus), compensating for local and remote directories."
 	},
 	"Loader tag": {
 		"prefix": "@loader",
