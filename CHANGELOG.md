@@ -2,6 +2,9 @@
 
 This project tries to adhere to [Semantic Versioning](https://semver.org/)
 
+# [0.2.10]
+- Update sources to include `DDE`
+
 # [0.2.9]
 - Fix syntax highlighting of tags
 - Change icon to comply with new VSCode size requirements
