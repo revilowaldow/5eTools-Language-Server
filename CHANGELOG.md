@@ -2,6 +2,10 @@
 
 This project tries to adhere to [Semantic Versioning](https://semver.org/)
 
+# [0.2.9]
+- Fix syntax highlighting of tags
+- Change icon to comply with new VSCode size requirements
+
 # [0.2.8]
 - Update sources to include `XSAC`, `FFotR`, `RHW`, `AU`, `AUD`, `XScreenRHW`, `HFLotT`, `CaBoMP`, `BQDD`, `SoS`, `RWG`, `PL`, `WoW`, `ICC`
 - Update sources to remove `TDCSR`, `ALCurseOfStrahd`, `ALElementalEvil`, `ALRageOfDemons`
