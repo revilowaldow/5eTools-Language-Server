@@ -2,6 +2,12 @@
 
 This project tries to adhere to [Semantic Versioning](https://semver.org/)
 
+# [0.2.8]
+- Update sources to include `XSAC`, `FFotR`, `RHW`, `AU`, `AUD`, `XScreenRHW`, `HFLotT`, `CaBoMP`, `BQDD`, `SoS`, `RWG`, `PL`, `WoW`, `ICC`
+- Update sources to remove `TDCSR`, `ALCurseOfStrahd`, `ALElementalEvil`, `ALRageOfDemons`
+- Update tag keywords to include `5etoolsAudio`, `backgroundFluff`, `classFluff`, `itemFluff`, `recipeFluff`, `crochet`, `crochetFluff`, `spellFluff`, `subclassFluff`
+- Added snippets/tags for `5etoolsAudio`, `backgroundFluff`, `classFluff`, `itemFluff`, `recipeFluff`, `crochet`, `crochetFluff`, `spellFluff`, `subclassFluff`
+
 # [0.2.7]
 - Fix `table` snippet placeholders
 - Overhaul readme
